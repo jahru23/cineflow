@@ -83,35 +83,10 @@
         <Preference
             android:icon="@drawable/ic_github_logo"
             android:title="@string/github"
-            app:summary="https://github.com/recloudstream/cloudstream">
+            app:summary="https://github.com/jahru23/cineflow-app">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="https://github.com/recloudstream/cloudstream" />
-        </Preference>
-
-        <Preference
-            android:icon="@drawable/quick_novel_icon"
-            android:title="@string/lightnovel"
-            app:summary="https://github.com/LagradOst/QuickNovel">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://github.com/LagradOst/QuickNovel" />
-        </Preference>
-        <Preference
-            android:icon="@drawable/ic_baseline_discord_24"
-            android:title="@string/discord"
-            app:summary="https://discord.gg/5Hus6fM">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://discord.gg/5Hus6fM" />
-        </Preference>
-        <Preference
-            android:icon="@drawable/baseline_description_24"
-            android:title="@string/cs3wiki"
-            app:summary="https://cloudstream.miraheze.org/">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://cloudstream.miraheze.org/" />
+                android:data="https://github.com/jahru23/cineflow-app" />
         </Preference>
 
     </PreferenceCategory>

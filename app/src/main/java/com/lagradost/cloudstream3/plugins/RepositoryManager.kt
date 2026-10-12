@@ -102,7 +102,7 @@ object RepositoryManager {
         if (custom != null && custom.isNotEmpty()) custom else arrayOf(
             RepositoryData(
                 name = "CineFlow Extensions",
-                url = "https://raw.githubusercontent.com/jahru23/voidstream-extensions/builds/repo.json"
+                url = "https://raw.githubusercontent.com/jahru23/cineflow-extensions/builds/repo.json"
             )
         )
     }

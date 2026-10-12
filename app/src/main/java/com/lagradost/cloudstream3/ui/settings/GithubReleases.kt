@@ -85,8 +85,10 @@ object GithubReleases : GithubRepository {
             headers = defaultHeaders
         ).parsed<GithubRelease>()
 
-        // Find the first correct asset, given that we might have other binaries we release in the same version
+        // Find the first correct asset, preferring arm64 / split over universal
         val foundAsset = latestRelease.assets.firstOrNull { asset ->
+            asset.contentType == contentType && asset.name.contains("arm64")
+        } ?: latestRelease.assets.firstOrNull { asset ->
             asset.contentType == contentType
         }
 
@@ -94,10 +96,15 @@ object GithubReleases : GithubRepository {
             throw FileNotFoundException()
         }
 
+        val versionRegex = Regex("""(\d+\.\d+\.\d+)""")
+        val versionFromTag = versionRegex.find(latestRelease.tagName)?.value
+            ?: versionRegex.find(foundAsset.name)?.value
+            ?: latestRelease.tagName.removePrefix("v")
+
         return GithubFile(
             digest = foundAsset.digest,
             downloadUrl = foundAsset.browserDownloadUrl,
-            displayName = foundAsset.name.substringBeforeLast("."),
+            displayName = versionFromTag,
             changeLog = latestRelease.body,
             tagName = latestRelease.tagName,
             nodeId = latestRelease.nodeId

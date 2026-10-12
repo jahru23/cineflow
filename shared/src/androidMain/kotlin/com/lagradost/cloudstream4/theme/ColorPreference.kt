@@ -68,5 +68,5 @@ fun Context.loadThemeMode(): CloudStreamThemeMode {
 
 fun Context.loadPrimaryColor(): CloudStreamPrimaryColor {
     val prefs = PreferenceManager.getDefaultSharedPreferences(this)
-    return perfToColor(prefs.getString("primary_color_key", "Normal"))
+    return perfToColor(prefs.getString("primary_color_key", "Monet"))
 }

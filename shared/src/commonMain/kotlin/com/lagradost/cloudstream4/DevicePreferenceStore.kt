@@ -60,7 +60,7 @@ class SecurityPreferences(preferences: PreferenceStore) {
 
 class UIPreferences(preferences: PreferenceStore) {
     val primaryColor = preferences.getString(
-        "primary_color_key", "Normal"
+        "primary_color_key", "Monet"
     )
     val theme = preferences.getString(
         "app_theme_key", "AmoledLight"

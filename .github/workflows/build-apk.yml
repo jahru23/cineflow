@@ -47,8 +47,10 @@ jobs:
         run: |
           mkdir -p build-output
           find app/build/outputs/apk/stable/release -name "*.apk" -exec cp {} build-output/ \;
-          find build-output -name "*arm64*" -exec cp {} build-output/CineFlow-arm64.apk \;
-          find build-output -name "*universal*" -exec cp {} build-output/CineFlow-universal.apk \;
+          find build-output -name "*arm64*" -exec cp {} build-output/CineFlow-1.0.0-arm64.apk \;
+          find build-output -name "*universal*" -exec cp {} build-output/CineFlow-1.0.0-universal.apk \;
+          cp build-output/CineFlow-1.0.0-arm64.apk build-output/CineFlow-arm64.apk
+          cp build-output/CineFlow-1.0.0-universal.apk build-output/CineFlow-universal.apk
           ls -lh build-output/
 
       - name: Upload APK Artifact
