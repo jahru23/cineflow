@@ -245,10 +245,10 @@ object SettingsGeneralScreen : SearchableSettings {
                 preferenceItems = persistentListOf(
                     Preference.PreferenceItem.TextPreference(
                         title = stringResource(R.string.github),
-                        subtitle = "https://github.com/recloudstream/cloudstream",
+                        subtitle = "https://github.com/jahru23/cineflow-app",
                         icon = painterResource(R.drawable.ic_github_logo),
                         onClick = {
-                            CloudStreamApp.openBrowser("https://github.com/recloudstream/cloudstream")
+                            CloudStreamApp.openBrowser("https://github.com/jahru23/cineflow-app")
                         }
                     ),
                     Preference.PreferenceItem.TextPreference(

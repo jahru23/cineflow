@@ -86,8 +86,8 @@ class ExtensionsViewModel : ViewModel() {
         _pluginStats.postValue(stats)
     }
 
-    private fun repos() = (getKey<Array<RepositoryData>>(REPOSITORIES_KEY)
-        ?: emptyArray()) + PREBUILT_REPOSITORIES
+    private fun repos() = ((getKey<Array<RepositoryData>>(REPOSITORIES_KEY)
+        ?: emptyArray()) + PREBUILT_REPOSITORIES).distinctBy { it.url }.toTypedArray()
 
     fun loadRepositories() {
         val urls = repos()

@@ -101,7 +101,7 @@ object RepositoryManager {
         val custom = getKey<Array<RepositoryData>>("PREBUILT_REPOSITORIES")
         if (custom != null && custom.isNotEmpty()) custom else arrayOf(
             RepositoryData(
-                name = "VoidStream Extensions",
+                name = "CineFlow Extensions",
                 url = "https://raw.githubusercontent.com/jahru23/voidstream-extensions/builds/repo.json"
             )
         )
@@ -246,18 +246,9 @@ object RepositoryManager {
     }
 
     fun getRepositories(): Array<RepositoryData> {
-        val saved = getKey<Array<RepositoryData>>(REPOSITORIES_KEY)
-        if (saved == null || saved.isEmpty()) {
-            val defaultRepos = arrayOf(
-                RepositoryData(
-                    name = "VoidStream Extensions",
-                    url = "https://raw.githubusercontent.com/jahru23/voidstream-extensions/builds/repo.json"
-                )
-            )
-            setKey(REPOSITORIES_KEY, defaultRepos)
-            return defaultRepos
-        }
-        return saved
+        val saved = getKey<Array<RepositoryData>>(REPOSITORIES_KEY) ?: emptyArray()
+        // Filter out any prebuilt repos to prevent duplicates
+        return saved.filter { s -> PREBUILT_REPOSITORIES.none { it.url == s.url } }.distinctBy { it.url }.toTypedArray()
     }
 
     // Don't want to read before we write in another thread
