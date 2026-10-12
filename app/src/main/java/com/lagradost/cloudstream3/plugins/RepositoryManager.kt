@@ -98,7 +98,13 @@ data class PluginWrapper(
 object RepositoryManager {
     const val ONLINE_PLUGINS_FOLDER = "Extensions"
     val PREBUILT_REPOSITORIES: Array<RepositoryData> by lazy {
-        getKey<Array<RepositoryData>>("PREBUILT_REPOSITORIES") ?: emptyArray()
+        val custom = getKey<Array<RepositoryData>>("PREBUILT_REPOSITORIES")
+        if (custom != null && custom.isNotEmpty()) custom else arrayOf(
+            RepositoryData(
+                name = "VoidStream Extensions",
+                url = "https://raw.githubusercontent.com/jahru23/voidstream-extensions/builds/repo.json"
+            )
+        )
     }
     private val GH_REGEX =
         Regex("^https://raw.githubusercontent.com/([A-Za-z0-9-]+)/([A-Za-z0-9_.-]+)/(.*)$")
@@ -240,7 +246,18 @@ object RepositoryManager {
     }
 
     fun getRepositories(): Array<RepositoryData> {
-        return getKey<Array<RepositoryData>>(REPOSITORIES_KEY) ?: emptyArray()
+        val saved = getKey<Array<RepositoryData>>(REPOSITORIES_KEY)
+        if (saved == null || saved.isEmpty()) {
+            val defaultRepos = arrayOf(
+                RepositoryData(
+                    name = "VoidStream Extensions",
+                    url = "https://raw.githubusercontent.com/jahru23/voidstream-extensions/builds/repo.json"
+                )
+            )
+            setKey(REPOSITORIES_KEY, defaultRepos)
+            return defaultRepos
+        }
+        return saved
     }
 
     // Don't want to read before we write in another thread

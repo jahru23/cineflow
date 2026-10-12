@@ -1,0 +1,74 @@
+name: Build VoidStream APK
+
+on:
+  push:
+    branches: [ master ]
+    paths-ignore:
+      - '*.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "build-voidstream"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 17
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v4
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build APK
+        run: |
+          ./gradlew assembleStableRelease --stacktrace
+
+      - name: Prepare APK Output
+        run: |
+          mkdir -p build-output
+          APK_FILE=$(find app/build/outputs/apk/stable -name "*.apk" | head -n 1)
+          if [ -z "$APK_FILE" ]; then
+            echo "Error: APK not found!"
+            find app/build/outputs/apk -type f
+            exit 1
+          fi
+          cp "$APK_FILE" build-output/VoidStream.apk
+          echo "Found APK: $APK_FILE -> build-output/VoidStream.apk"
+          ls -lh build-output/VoidStream.apk
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VoidStream-APK
+          path: build-output/VoidStream.apk
+          retention-days: 7
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME="v1.0.0-b${{ github.run_number }}"
+          gh release create "$TAG_NAME" build-output/VoidStream.apk \
+            --title "VoidStream v1.0.0 (Build ${{ github.run_number }})" \
+            --notes "VoidStream Android APK. Auto-loads VoidStream Extensions (LK21, Anichin, Kuramanime, dll)." \
+            --latest
