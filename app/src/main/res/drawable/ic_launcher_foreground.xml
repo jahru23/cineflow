@@ -3,23 +3,18 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <!-- CineFlow Cinema Outer Flow Ring -->
-    <path
-        android:pathData="M 72,30 C 58,24 40,28 32,39 C 24,50 24,64 32,75 C 41,86 58,88 72,82 L 70,74 C 58,79 44,77 37,68 C 30,59 30,47 37,39 C 44,30 58,27 70,32 Z"
-        android:fillColor="#E50914" />
-
-    <!-- CineFlow Stream Accent Ribbon -->
-    <path
-        android:pathData="M 78,37 C 68,31 54,34 46,41 L 50,47 C 56,42 66,40 74,45 Z"
-        android:fillColor="#FF5252" />
-
-    <!-- CineFlow Play Center Glyph -->
-    <path
-        android:pathData="M 48,42.5 C 48,40.8 49.8,39.8 51.3,40.6 L 69.5,52.1 C 70.8,53 70.8,55 69.5,55.9 L 51.3,67.4 C 49.8,68.2 48,67.2 48,65.5 Z"
-        android:fillColor="#FFFFFF" />
-
-    <!-- Cinema Track Markers -->
-    <path
-        android:pathData="M 27,48 L 31,48 L 31,52 L 27,52 Z M 27,56 L 31,56 L 31,60 L 27,60 Z"
-        android:fillColor="#E50914" />
+    <group
+        android:scaleX="0.337"
+        android:scaleY="0.337"
+        android:translateX="10.9"
+        android:translateY="10.9">
+        <!-- CineFlow The Fluid C Contour -->
+        <path
+            android:fillColor="#E50914"
+            android:pathData="M 206,63 A 92,92 0 1,0 206,193 C 195,204 177,204 166,193 C 155,182 155,164 166,153 A 48,48 0 1,1 166,103 C 155,92 155,74 166,63 C 177,52 195,52 206,63 Z" />
+        <!-- CineFlow Play Action Core -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 128,94 C 128,88.5 134,85 139,88 L 190,122 C 194,124.5 194,131.5 190,134 L 139,168 C 134,171 128,167.5 128,162 Z" />
+    </group>
 </vector>

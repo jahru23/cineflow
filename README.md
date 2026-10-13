@@ -1,10 +1,14 @@
-# CineFlow
+<p align="center">
+  <img src=".github/images/cineflow-logo.png" alt="CineFlow Logo" width="460">
+  <br>
+  <b>Modern, ad-free multimedia player and streaming media center for Android & Android TV.</b>
+</p>
 
-Modern, ad-free multimedia player and streaming media center for Android & Android TV.
-
-[![Build CineFlow APK](https://github.com/jahru23/cineflow/actions/workflows/build-apk.yml/badge.svg)](https://github.com/jahru23/cineflow/actions/workflows/build-apk.yml)
-[![Latest Release](https://img.shields.io/github/v/release/jahru23/cineflow?include_prereleases&label=release)](https://github.com/jahru23/cineflow/releases/latest)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+<p align="center">
+  <a href="https://github.com/jahru23/cineflow/actions/workflows/build-apk.yml"><img src="https://github.com/jahru23/cineflow/actions/workflows/build-apk.yml/badge.svg" alt="Build Status"></a>
+  <a href="https://github.com/jahru23/cineflow/releases/latest"><img src="https://img.shields.io/github/v/release/jahru23/cineflow?include_prereleases&label=release" alt="Latest Release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License"></a>
+</p>
 
 ---
 
