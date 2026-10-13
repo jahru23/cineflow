@@ -176,9 +176,9 @@ object SubtitlesScreen : SearchableSettings {
         val androidStore = AndroidPreferenceStore(LocalContext.current)
 
         val subtitlesFilterSubLang = androidStore.getBoolean("filter_sub_lang_key", false)
-        val autoSelectSubtitles = dataStore.getString(SUBTITLE_AUTO_SELECT_KEY, "en")
+        val autoSelectSubtitles = dataStore.getString(SUBTITLE_AUTO_SELECT_KEY, "id")
         val downloadSubsLanguage =
-            dataStore.getObjectFromString(SUBTITLE_DOWNLOAD_KEY, setOf("en"), serializer = { obj ->
+            dataStore.getObjectFromString(SUBTITLE_DOWNLOAD_KEY, setOf("id", "en"), serializer = { obj ->
                 obj.toList().toJsonLiteral()
             }, deserializer = { json ->
                 parseJson<List<String>>(json).toSet()

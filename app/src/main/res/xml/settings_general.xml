@@ -66,6 +66,7 @@
         <Preference
             android:icon="@drawable/ic_baseline_dns_24"
             android:key="@string/dns_key"
+            android:defaultValue="2"
             android:summary="@string/dns_pref_summary"
             android:title="@string/dns_pref" />
 

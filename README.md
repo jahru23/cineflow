@@ -1,112 +1,70 @@
-# CloudStream
+# CineFlow
 
-**⚠️ Warning: By default, this app doesn't provide any video sources; you have to install extensions to add functionality to the app.**
-<p align="left"><a href="https://github.com/recloudstream/cloudstream/releases/download/pre-release/app-prerelease-release.apk"><img src=".github/images/download-cloudstream-pre.png" alt="Download Cloudstream Pre-Release" width=430/></a></p>
+Modern, ad-free multimedia player and streaming media center for Android & Android TV.
 
-[![Discord](https://invidget.switchblade.xyz/5Hus6fM)](https://discord.gg/5Hus6fM)
+[![Build CineFlow APK](https://github.com/jahru23/cineflow-app/actions/workflows/build-apk.yml/badge.svg)](https://github.com/jahru23/cineflow-app/actions/workflows/build-apk.yml)
+[![Latest Release](https://img.shields.io/github/v/release/jahru23/cineflow-app?include_prereleases&label=release)](https://github.com/jahru23/cineflow-app/releases/latest)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
+---
 
-## Table of Contents: 
-+ [About Us:](#about_us)
-+ [Installation Steps:](#install_rules)
-+ [Contributing:](#contributing)
-+ [Issues:](#issues)
-  + [Bugs Reports:](#bug_report)
-  + [Enhancement:](#enhancment)
-+ [Extension Development:](#extensions)
-+ [Language Support:](#languages)
-+ [Further Sources](#contact_and_sources)
+## Overview
 
+**CineFlow** is an open-source media player designed with complete freedom, zero advertisements, and robust privacy. The app separates player architecture from content sources using a modular plugin engine.
 
-<a id="about_us"></a>
+### Key Features
 
-## About us: 
+* **Ad-Free & Privacy First:** Zero trackers, zero analytics, zero banner or pop-up advertisements.
+* **Pre-seeded Extension Ecosystem:** Connected out-of-the-box with [CineFlow Extensions](https://github.com/jahru23/cineflow-extensions).
+* **Bypass ISP Filtering:** DNS-over-HTTPS (DoH via Cloudflare 1.1.1.1) enabled by default to prevent connection dropouts.
+* **Intelligent Subtitles:** Automatic detection and prioritization for Indonesian (`id`) and multi-language subtitles.
+* **Material You Dynamic Theming:** Adaptive color palettes (Monet engine) for Android 12+ alongside pure AMOLED dark mode.
+* **Modern Media Player:** Integrated ExoPlayer engine supporting Picture-in-Picture (PiP), gesture controls, subtitle customization, and Chromecast.
+* **Cross-Device Support:** Built for standard Android smartphones, tablets, and Android TV (leanback UI with remote D-Pad navigation).
 
-**CloudStream is a media center that prioritizes and emphasizes complete freedom and flexibility for users and developers.** 
+---
 
-CloudStream is an extension-based multimedia player with tracking support. There are extensions to view videos from: 
+## Download & Installation
 
-+ [Librevox (audio-books)](https://librivox.org/) 
-+ [Youtube](https://www.youtube.com/)
-+ [Twitch](https://www.twitch.tv/)
-+ [iptv-org (A collection of publicly available IPTV (Internet Protocol television) channels from all over the world.)](https://github.com/iptv-org/iptv) 
-+ [nginx](https://nginx.org/)
-+ And more... 
+Get the latest installable APKs directly from GitHub Releases:
 
+* **[Download Latest CineFlow APK](https://github.com/jahru23/cineflow-app/releases/latest)**
 
-**Please don't create illegal extensions or use any that host any copyrighted media.** For more details about our stance on the DMCA and EUCD, you can read about it on our organization: [reCloudStream](https://github.com/recloudstream)
+Available packages per architecture:
+* `CineFlow-1.0.0-arm64.apk` (Recommended for modern smartphones and Android TV)
+* `CineFlow-1.0.0-universal.apk` (Compatible with all supported ABIs)
 
-#### Important Copyright Note: 
+---
 
-Our documentation is unmaintained and open to contributions; therefore, apps and sources, extensions in recommended sources, and recommended apps are not officially moderated or endorsed by CloudStream; if you or another copyright owner identify an extension that breaches your copyright, please let us know. 
+## Extension Repository
 
+CineFlow utilizes dynamic modular plugins (`.cs3` packages):
+* Repository URL: `https://raw.githubusercontent.com/jahru23/cineflow-extensions/builds/repo.json`
+* Source Code: [jahru23/cineflow-extensions](https://github.com/jahru23/cineflow-extensions)
 
-#### Features:
-+ **AdFree**, No ads whatsoever
-+ No tracking/analytics
-+ Bookmarks
-+ Phone and TV support
-+ Chromecast
-+ Extension system for personal customization
+---
 
+## Building from Source
 
-<a id="install_rules"></a>
+### Prerequisites
+* JDK 17 (Temurin recommended)
+* Android SDK Platform 36/37
+* Gradle 8.x
 
-## Installation: 
+### Build Commands
+```bash
+git clone https://github.com/jahru23/cineflow-app.git
+cd cineflow-app
+chmod +x gradlew
 
-Our documentation provides the steps to install and configure CloudStream for your streaming needs.
+# Build release APK
+./gradlew assembleStableRelease
+```
 
-[Getting Started With CloudStream:](https://recloudstream.github.io/csdocs/)
+Compiled APKs will be located in `app/build/outputs/apk/stable/release/`.
 
-<a id="contributing"></a>
+---
 
-## Contributing:
-We **happily** accept any contributions to our project. To find out where you can start contributing towards the project, please look [at our issues tab](/cloudstream/issues)
+## License
 
-
-
-<a id="issues"></a> 
- 
-### Issues: 
-While we **actively** accept issues and pull requests, we do require you fill out an [template](https://github.com/recloudstream/cloudstream/issues/new/choose) for issues. These include the following:
-
-<a id="bug_report"></a>
-
-- [Bug Report Template: ](https://github.com/recloudstream/cloudstream/issues/new?assignees=&labels=bug&projects=&template=application-bug.yml)
-  - For bug reports, we want as much info as possible, including your downloaded version of CloudeStream, device and updated version (if possible, current API),
-    expected behavior of the program, and the actual behavior that the program did, most importantly we require clear, reproducible steps of the bug. If your bug can't be       reproduced, it is unlikely we'll work on your issue.
-    
-<a id="enhancment"></a>
-  
-- [Feature Request Template: ](https://github.com/recloudstream/cloudstream/issues/new?assignees=&labels=enhancement&projects=&template=feature-request.yml)
-  - Before adding a feature request, please check to see if a feature request already has been requested.  
-
-
-### Extensions:
- 
-**Further details on creating extensions for CloudStream are found in our documentation.**
-
-[Guide: For Extension Developers](https://recloudstream.github.io/csdocs/devs/gettingstarted/) 
-
-<a id="contact_and_sources"></a>
-
-## Further Sources: 
-
-As well as providing clear install steps, our [website](https://dweb.link/ipns/cloudstream.on.fleek.co/) includes a wide variety of other tools, such as: 
-- [Troubleshooting](https://recloudstream.github.io/csdocs/troubleshooting/)
-- [Further CloudStream Repositories](https://recloudstream.github.io/csdocs/repositories/) 
-- Set-Up for other devices, such as:
-  - [Android TV](https://recloudstream.github.io/csdocs/other-devices/tv/)
-  - [Windows](https://recloudstream.github.io/csdocs/other-devices/windows/)
-  - [Linux](https://recloudstream.github.io/csdocs/other-devices/linux/)
-- And more...
-
-<a id="languages"> </a>  
-
-### Supported languages:
-
-Even if you can't contribute to the code or documentation, we always look for those who can contribute to translation and language support. Your contribution is exceptionally appreciated; you can check our translation from the figure below. 
-
-<a href="https://hosted.weblate.org/engage/cloudstream/">
-  <img src="https://hosted.weblate.org/widgets/cloudstream/-/app/multi-auto.svg" alt="Translation status" />
-</a>
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See [LICENSE](LICENSE) for details.
