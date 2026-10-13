@@ -2,8 +2,8 @@
 
 Modern, ad-free multimedia player and streaming media center for Android & Android TV.
 
-[![Build CineFlow APK](https://github.com/jahru23/cineflow-app/actions/workflows/build-apk.yml/badge.svg)](https://github.com/jahru23/cineflow-app/actions/workflows/build-apk.yml)
-[![Latest Release](https://img.shields.io/github/v/release/jahru23/cineflow-app?include_prereleases&label=release)](https://github.com/jahru23/cineflow-app/releases/latest)
+[![Build CineFlow APK](https://github.com/jahru23/cineflow/actions/workflows/build-apk.yml/badge.svg)](https://github.com/jahru23/cineflow/actions/workflows/build-apk.yml)
+[![Latest Release](https://img.shields.io/github/v/release/jahru23/cineflow?include_prereleases&label=release)](https://github.com/jahru23/cineflow/releases/latest)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 ---
@@ -28,7 +28,7 @@ Modern, ad-free multimedia player and streaming media center for Android & Andro
 
 Get the latest installable APKs directly from GitHub Releases:
 
-* **[Download Latest CineFlow APK](https://github.com/jahru23/cineflow-app/releases/latest)**
+* **[Download Latest CineFlow APK](https://github.com/jahru23/cineflow/releases/latest)**
 
 Available packages per architecture:
 * `CineFlow-1.0.0-arm64.apk` (Recommended for modern smartphones and Android TV)

@@ -180,18 +180,21 @@
         <Preference
             android:icon="@drawable/ic_baseline_storage_24"
             android:key="@string/video_buffer_disk_key"
+            android:defaultValue="200"
             android:summary="@string/video_disk_description"
             android:title="@string/video_buffer_disk_settings" />
 
         <Preference
             android:icon="@drawable/ic_baseline_storage_24"
             android:key="@string/video_buffer_size_key"
+            android:defaultValue="60"
             android:summary="@string/video_ram_description"
             android:title="@string/video_buffer_size_settings" />
 
         <Preference
             android:icon="@drawable/ic_baseline_storage_24"
             android:key="@string/video_buffer_length_key"
+            android:defaultValue="120"
             android:summary="@string/video_ram_description"
             android:title="@string/video_buffer_length_settings" />
 

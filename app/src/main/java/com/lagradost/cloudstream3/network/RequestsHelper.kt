@@ -12,6 +12,8 @@ import okhttp3.Cache
 import okhttp3.Headers
 import okhttp3.Headers.Companion.toHeaders
 import okhttp3.OkHttpClient
+import okhttp3.ConnectionPool
+import java.util.concurrent.TimeUnit
 import org.conscrypt.Conscrypt
 import java.io.File
 import java.security.Security
@@ -41,6 +43,10 @@ fun buildDefaultClient(context: Context, ignoreSSL: Boolean = false): OkHttpClie
     val baseClient = OkHttpClient.Builder()
         .followRedirects(true)
         .followSslRedirects(true)
+        .connectTimeout(20, TimeUnit.SECONDS)
+        .readTimeout(30, TimeUnit.SECONDS)
+        .writeTimeout(30, TimeUnit.SECONDS)
+        .connectionPool(ConnectionPool(10, 5, TimeUnit.MINUTES))
         .apply {
             if (ignoreSSL) {
                 ignoreAllSSLErrors()

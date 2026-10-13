@@ -43,7 +43,7 @@ object GithubReleases : GithubRepository {
     )
 
     const val APK_USERNAME = "jahru23"
-    const val APK_REPOSITORY = "cineflow-app"
+    const val APK_REPOSITORY = "cineflow"
     const val APK_PRERELEASE = "pre-release"
     const val APK_CONTENT_TYPE = "application/vnd.android.package-archive"
 

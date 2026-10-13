@@ -82,5 +82,5 @@ jobs:
           TAG_NAME="v1.0.0-b${{ github.run_number }}"
           gh release create "$TAG_NAME" build-output/*.apk \
             --title "CineFlow v1.0.0 (Build ${{ github.run_number }})" \
-            --notes "CineFlow Android APK." \
+            --generate-notes \
             --latest

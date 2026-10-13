@@ -669,7 +669,7 @@ class CS3IPlayer : IPlayer {
     }
 
     companion object {
-        private const val CRONET_TIMEOUT_MS = 15_000
+        private const val CRONET_TIMEOUT_MS = 30_000
 
         /**
          * Single shared engine, to minimize the overhead of maintaining many as:
@@ -777,13 +777,14 @@ class CS3IPlayer : IPlayer {
                 if (!cacheDirectory.exists()) {
                     cacheDirectory.mkdirs()
                 }
+                val effectiveDiskCache = if (diskCacheSize <= 0) 100L * 1024L * 1024L else diskCacheSize
                 CronetEngine.Builder(context)
                     .enableBrotli(true)
                     .enableHttp2(true)
                     .enableQuic(true)
                     .setStoragePath(cacheDirectory.absolutePath)
                     .setLibraryLoader(null)
-                    .enableHttpCache(CronetEngine.Builder.HTTP_CACHE_DISK, diskCacheSize)
+                    .enableHttpCache(CronetEngine.Builder.HTTP_CACHE_DISK, effectiveDiskCache)
                     .build().also { buildEngine ->
                         Log.d(
                             TAG,
@@ -1263,24 +1264,24 @@ class CS3IPlayer : IPlayer {
                     DefaultLoadControl.Builder()
                         .setTargetBufferBytes(
                             if (cacheSize <= 0) {
-                                DefaultLoadControl.DEFAULT_TARGET_BUFFER_BYTES
+                                60 * 1024 * 1024
                             } else {
                                 if (cacheSize > Int.MAX_VALUE) Int.MAX_VALUE else cacheSize.toInt()
                             }
                         )
                         .setBackBuffer(
-                            30000,
+                            60000,
                             true
                         )
                         .setBufferDurationsMs(
-                            DefaultLoadControl.DEFAULT_MIN_BUFFER_MS,
+                            30000,
                             if (videoBufferMs <= 0) {
-                                DefaultLoadControl.DEFAULT_MAX_BUFFER_MS
+                                120000
                             } else {
                                 videoBufferMs.toInt()
                             },
-                            DefaultLoadControl.DEFAULT_BUFFER_FOR_PLAYBACK_MS,
-                            DefaultLoadControl.DEFAULT_BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS
+                            4000,
+                            6000
                         ).build()
                 )
 
@@ -1294,7 +1295,7 @@ class CS3IPlayer : IPlayer {
             null
         } else {
             if (simpleCache == null)
-                simpleCache = getCache(context, simpleCacheSize)
+                simpleCache = getCache(context, if (simpleCacheSize <= 0) 200L * 1024L * 1024L else simpleCacheSize)
 
             val cacheFactory = CacheDataSource.Factory().apply {
                 simpleCache?.let { setCache(it) }
