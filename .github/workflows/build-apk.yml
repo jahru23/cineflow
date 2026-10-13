@@ -84,3 +84,4 @@ jobs:
             --title "CineFlow v1.0.0 (Build ${{ github.run_number }})" \
             --generate-notes \
             --latest
+
