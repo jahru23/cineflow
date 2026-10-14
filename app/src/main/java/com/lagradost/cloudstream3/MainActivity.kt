@@ -683,9 +683,9 @@ class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCa
 
     @SuppressLint("ApplySharedPref") // commit since the op needs to be synchronous
     private fun showConfirmExitDialog(settingsManager: SharedPreferences) {
-        val confirmBeforeExit = settingsManager.getInt(getString(R.string.confirm_exit_key), -1)
+        val confirmBeforeExit = settingsManager.getInt(getString(R.string.confirm_exit_key), 0)
 
-        if (confirmBeforeExit == 1 || (confirmBeforeExit == -1 && isLayout(PHONE))) {
+        if (confirmBeforeExit == 1) {
             // finish() causes a bug on some TVs where player
             // may keep playing after closing the app.
             if (isLayout(TV)) exitProcess(0) else finish()

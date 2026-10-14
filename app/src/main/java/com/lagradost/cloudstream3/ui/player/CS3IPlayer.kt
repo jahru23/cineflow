@@ -1144,7 +1144,9 @@ class CS3IPlayer : IPlayer {
                         val activeCompressor = compressor
                         if (activeCompressor == null) {
                             // no nextlib = EXTENSION_RENDERER_MODE_OFF, no compressor = fully default sink
-                            DefaultRenderersFactory(context)
+                            DefaultRenderersFactory(context).apply {
+                                setEnableDecoderFallback(true)
+                            }
                         } else {
                             object : DefaultRenderersFactory(context) {
                                 @androidx.annotation.OptIn(androidx.media3.common.util.UnstableApi::class)
@@ -1157,6 +1159,8 @@ class CS3IPlayer : IPlayer {
                                     .setEnableAudioOutputPlaybackParameters(enableAudioTrackPlaybackParams)
                                     .setAudioProcessors(arrayOf<AudioProcessor>(activeCompressor))
                                     .build()
+                            }.apply {
+                                setEnableDecoderFallback(true)
                             }
                         }
                     }

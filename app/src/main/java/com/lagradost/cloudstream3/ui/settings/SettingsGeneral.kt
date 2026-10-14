@@ -419,40 +419,5 @@ class SettingsGeneral : BasePreferenceFragmentCompat() {
             }
             return@setOnPreferenceClickListener true
         }
-
-        try {
-            beneneCount =
-                settingsManager.getInt(getString(R.string.benene_count), 0)
-            getPref(R.string.benene_count)?.let { pref ->
-                pref.summary =
-                    if (beneneCount <= 0) getString(R.string.benene_count_text_none) else getString(
-                        R.string.benene_count_text
-                    ).format(
-                        beneneCount
-                    )
-
-                pref.setOnPreferenceClickListener {
-                    try {
-                        beneneCount++
-                        if (beneneCount%20 == 0) {
-                            activity?.navigate(R.id.action_navigation_settings_general_to_easterEggMonkeFragment)
-                        }
-                        settingsManager.edit {
-                            putInt(
-                                getString(R.string.benene_count),
-                                beneneCount
-                            )
-                        }
-                        it.summary = getString(R.string.benene_count_text).format(beneneCount)
-                    } catch (e: Exception) {
-                        logError(e)
-                    }
-
-                    return@setOnPreferenceClickListener true
-                }
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
     }
 }

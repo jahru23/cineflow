@@ -81,11 +81,11 @@ object SearchResultBuilder {
 
         val showSub = showCache[textIsDub?.context?.getString(R.string.show_sub_key)] ?: false
         val showDub = showCache[textIsDub?.context?.getString(R.string.show_dub_key)] ?: false
-        val showTitle = showCache[cardText?.context?.getString(R.string.show_title_key)] ?: false
-        val showEpisodeText = showCache[cardText?.context?.getString(R.string.show_episode_text_key)] ?: false
-        val showHd = showCache[textQuality?.context?.getString(R.string.show_hd_key)] ?: false
+        val showTitle = showCache[cardText?.context?.getString(R.string.show_title_key)] ?: true
+        val showEpisodeText = showCache[cardText?.context?.getString(R.string.show_episode_text_key)] ?: true
+        val showHd = showCache[textQuality?.context?.getString(R.string.show_hd_key)] ?: true
         val showRatingView =
-            showCache[textQuality?.context?.getString(R.string.show_rating_key)] ?: false
+            showCache[textQuality?.context?.getString(R.string.show_rating_key)] ?: true
         if (card is SyncAPI.LibraryItem) {
             val ratingText = card.personalRating?.toStringNull(0.1, 10, 1)
             val showRating = !ratingText.isNullOrBlank()

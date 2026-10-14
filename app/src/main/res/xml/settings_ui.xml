@@ -104,6 +104,7 @@
         <Preference
             android:icon="@drawable/ic_baseline_exit_24"
             android:key="@string/confirm_exit_key"
+            android:defaultValue="0"
             android:summary="@string/confirm_before_exiting_desc"
             android:title="@string/confirm_before_exiting_title" />
         <Preference

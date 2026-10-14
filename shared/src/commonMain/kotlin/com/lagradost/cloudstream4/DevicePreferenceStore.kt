@@ -125,7 +125,7 @@ class UIPreferences(preferences: PreferenceStore) {
     )
 
     val confirmExit = preferences.getInt(
-        "confirm_exit_key", -1
+        "confirm_exit_key", 0
     )
 
     /** This had to be refactored to use enumSet because the old system is prone to bugs */
