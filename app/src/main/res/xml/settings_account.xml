@@ -6,20 +6,8 @@
         android:title="@string/pref_category_accounts">
 
         <Preference
-            android:icon="@drawable/mal_logo"
-            android:key="@string/mal_key" />
-
-        <Preference
             android:icon="@drawable/kitsu_icon"
             android:key="@string/kitsu_key" />
-
-        <Preference
-            android:icon="@drawable/ic_anilist_icon"
-            android:key="@string/anilist_key" />
-
-        <Preference
-            android:icon="@drawable/simkl_logo"
-            android:key="@string/simkl_key" />
 
         <Preference
             android:icon="@drawable/open_subtitles_icon"

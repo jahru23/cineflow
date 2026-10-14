@@ -11,12 +11,9 @@ import androidx.fragment.app.FragmentActivity
 import com.lagradost.cloudstream3.CommonActivity.activity
 import com.lagradost.cloudstream3.CommonActivity.onDialogDismissedEvent
 import com.lagradost.cloudstream3.R
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.aniListApi
 import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.animeSkipApi
 import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.kitsuApi
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.malApi
 import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.openSubtitlesApi
-import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.simklApi
 import com.lagradost.cloudstream3.syncproviders.AccountManager.Companion.subDlApi
 import com.lagradost.cloudstream3.syncproviders.PlainAuthRepo
 import com.lagradost.cloudstream3.syncproviders.SubtitleRepo
@@ -43,10 +40,7 @@ import kotlinx.collections.immutable.persistentListOf
 
 object SettingsAccountScreen : SearchableSettings, BiometricAuthenticator.BiometricCallback {
     val syncApis = persistentListOf(
-        SyncRepo(malApi),
         SyncRepo(kitsuApi),
-        SyncRepo(aniListApi),
-        SyncRepo(simklApi),
         SubtitleRepo(openSubtitlesApi),
         SubtitleRepo(subDlApi),
         PlainAuthRepo(animeSkipApi),

@@ -44,6 +44,9 @@ object InAppUpdater {
     private const val PRERELEASE_PACKAGE_NAME = "com.lagradost.cloudstream3.prerelease"
     private const val LOG_TAG = "InAppUpdater"
 
+    /** Matches "1.2.3" anywhere in a release tag or asset name. */
+    private val VERSION_REGEX = Regex("""(\d+)\.(\d+)\.(\d+)""")
+
     @Serializable
     private data class GithubAsset(
         @JsonProperty("name") @SerialName("name") val name: String,
@@ -104,51 +107,53 @@ object InAppUpdater {
             app.get(url, headers = headers).text
         ).toList()
 
-        val versionRegex = Regex("""(.*?((\d+)\.(\d+)\.(\d+))\.apk)""")
-        val versionRegexLocal = Regex("""(.*?((\d+)\.(\d+)\.(\d+)).*)""")
-        val foundList = response.filter { rel ->
-            !rel.prerelease
-        }.sortedWith(compareBy { release ->
-            release.assets.firstOrNull { it.contentType == "application/vnd.android.package-archive" }?.name?.let { it1 ->
-                versionRegex.find(it1)?.groupValues?.let {
-                    it[3].toInt() * 100_000_000 + it[4].toInt() * 10_000 + it[5].toInt()
-                }
-            }
-        }).toList()
+        // Newest non-prerelease release, GitHub returns them sorted by created_at desc already.
+        val found = response.firstOrNull { rel -> !rel.prerelease }
+            ?: return Update(false, null, null, null, null)
 
-        val found = foundList.lastOrNull()
-        val foundAsset = found?.assets?.getOrNull(0)
-        val foundVersion = foundAsset?.name?.let { versionRegex.find(it) }
-
-        if (foundVersion == null) {
-            return Update(false, null, null, null, null)
+        // Release assets can carry an abi suffix (CineFlow-1.0.8-arm64.apk), so parse the version
+        // from anywhere in the file name instead of requiring it right before ".apk".
+        val apkAssets = found.assets.filter { asset ->
+            asset.contentType == "application/vnd.android.package-archive" || asset.name.endsWith(
+                ".apk", ignoreCase = true
+            )
         }
+        val foundAsset = apkAssets.firstOrNull { asset ->
+            asset.name.contains("arm64", ignoreCase = true) && parseVersion(asset.name) != null
+        } ?: apkAssets.firstOrNull { asset -> parseVersion(asset.name) != null }
+        ?: apkAssets.firstOrNull { asset -> asset.name.contains("arm64", ignoreCase = true) }
+        ?: apkAssets.firstOrNull()
+        ?: return Update(false, null, null, null, null)
 
-        val currentVersion = packageName?.let {
-            packageManager.getPackageInfo(it, 0)
-        }
+        val remoteVersion = parseVersion(foundAsset.name) ?: parseVersion(found.tagName)
+        ?: return Update(false, null, null, null, null)
 
-        val shouldUpdate = if (foundAsset.browserDownloadUrl.isBlank()) {
-            false
-        } else {
-            currentVersion?.versionName?.let { versionName ->
-                versionRegexLocal.find(versionName)?.groupValues?.let {
-                    it[3].toInt() * 100_000_000 + it[4].toInt() * 10_000 + it[5].toInt()
-                }
-            }?.compareTo(
-                foundVersion.groupValues.let {
-                    it[3].toInt() * 100_000_000 + it[4].toInt() * 10_000 + it[5].toInt()
-                })!! < 0
-        }
+        val currentVersion = packageName?.let { packageManager.getPackageInfo(it, 0) }
+        val localVersion = parseVersion(currentVersion?.versionName ?: "")
+
+        val shouldUpdate = foundAsset.browserDownloadUrl.isNotBlank() &&
+                localVersion != null && remoteVersion > localVersion
 
         return Update(
             shouldUpdate,
             foundAsset.browserDownloadUrl,
-            foundVersion.groupValues[2],
+            formatVersion(remoteVersion),
             found.body,
             found.nodeId
         )
     }
+
+    /** Parses "1.2.3" out of any string into a single sortable int, or null when absent. */
+    private fun parseVersion(text: String): Int? {
+        val match = VERSION_REGEX.find(text) ?: return null
+        val (major, minor, patch) = match.destructured
+        return major.toIntOrNull()?.times(100_000_000)
+            ?.plus(minor.toIntOrNull()?.times(10_000) ?: 0)
+            ?.plus(patch.toIntOrNull() ?: 0)
+    }
+
+    private fun formatVersion(version: Int): String =
+        "${version / 100_000_000}.${(version / 10_000) % 10_000}.${version % 10_000}"
 
     private suspend fun Activity.getPreReleaseUpdate(): Update {
         val tagUrl =

@@ -39,6 +39,15 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Set build version
+        run: |
+          VERSION_NAME="1.0.${{ github.run_number }}"
+          VERSION_CODE=$((100 + ${{ github.run_number }}))
+          sed -i "s/^versionCode = .*/versionCode = \"$VERSION_CODE\"/" gradle/libs.versions.toml
+          sed -i "s/^versionName = .*/versionName = \"$VERSION_NAME\"/" gradle/libs.versions.toml
+          grep -E '^(versionCode|versionName)' gradle/libs.versions.toml
+          echo "VERSION_NAME=$VERSION_NAME" >> "$GITHUB_ENV"
+
       - name: Setup Release Keystore
         env:
           RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
@@ -61,11 +70,12 @@ jobs:
       - name: Prepare APK Output
         run: |
           mkdir -p build-output
-          find app/build/outputs/apk/stable/release -name "*.apk" -exec cp {} build-output/ \;
-          find build-output -name "*arm64*" -exec cp {} build-output/CineFlow-1.0.0-arm64.apk \;
-          find build-output -name "*universal*" -exec cp {} build-output/CineFlow-1.0.0-universal.apk \;
-          cp build-output/CineFlow-1.0.0-arm64.apk build-output/CineFlow-arm64.apk
-          cp build-output/CineFlow-1.0.0-universal.apk build-output/CineFlow-universal.apk
+          ARM64=$(find app/build/outputs/apk/stable/release -name "*arm64*.apk" | head -n1)
+          UNIVERSAL=$(find app/build/outputs/apk/stable/release -name "*universal*.apk" | head -n1)
+          cp "$ARM64" "build-output/CineFlow-$VERSION_NAME-arm64.apk"
+          cp "$UNIVERSAL" "build-output/CineFlow-$VERSION_NAME-universal.apk"
+          cp "build-output/CineFlow-$VERSION_NAME-arm64.apk" build-output/CineFlow-arm64.apk
+          cp "build-output/CineFlow-$VERSION_NAME-universal.apk" build-output/CineFlow-universal.apk
           ls -lh build-output/
 
       - name: Upload APK Artifact
@@ -79,9 +89,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          TAG_NAME="v1.0.0-b${{ github.run_number }}"
+          TAG_NAME="v$VERSION_NAME"
           gh release create "$TAG_NAME" build-output/*.apk \
-            --title "CineFlow v1.0.0 (Build ${{ github.run_number }})" \
+            --title "CineFlow v$VERSION_NAME" \
             --generate-notes \
             --latest
 
