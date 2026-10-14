@@ -578,7 +578,7 @@
     <string name="battery_dialog_title">Tắt tối ưu hóa pin</string>
     <string name="app_info_intent_error">Không thể mở thông tin ứng dụng CineFlow.</string>
     <string name="unfavorite">Bỏ yêu thích</string>
-    <string name="biometric_authentication_title">Mở khóa Cloudstream</string>
+    <string name="biometric_authentication_title">Mở khóa CineFlow</string>
     <string name="music_singular">Nhạc</string>
     <string name="audio_book_singular">Sách nói</string>
     <string name="biometric_setting">Khóa bằng sinh trắc học</string>

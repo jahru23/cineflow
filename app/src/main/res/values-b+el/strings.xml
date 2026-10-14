@@ -535,7 +535,7 @@
     <string name="duplicate_message_single" formatted="true">Φαίνεται πως ένα πιθανό αντίγραφο βρίσκεται στη βιβλιοθήκη σας: \'%s.\' \n \nΘα επιθυμούσατε να το προσθέσετε, να το αντικαταστήσετε, ή να ακυρώσετε την ενέργεια;</string>
     <string name="enter_current_pin">Εισαγωγή Τρέχον Κωδικού</string>
     <string name="lock_profile">Κλείδωμα Προφίλ</string>
-    <string name="biometric_authentication_title">Ξεκλείδωμα Cloudstream</string>
+    <string name="biometric_authentication_title">Ξεκλείδωμα CineFlow</string>
     <string name="password_pin_authentication_title">ΚωδικόςPIN Αυθεντικότητας</string>
     <string name="speed_setting_summary">Προσθέτει επιλογή ταχύτητας στον αναπαραγωγέα</string>
     <string name="logged_account" formatted="true">Σύνδεση ως %s</string>
@@ -552,7 +552,7 @@
     <string name="clipboard_permission_error">Πρόβλημα στην πρόσβαση στο Clipboard, Παρακαλώ προσπαθήστε ξανά.</string>
     <string name="clipboard_unknown_error">Πρόβλημα στην αντιγραφή , Παρακαλούμε αντιγράψτε το logcat και επικοινωνήστε με την υποστήριξη.</string>
     <string name="app_unrestricted_toast">Η χρήση μπαταρίας έχει ήδη τεθεί χωρίς περιορισμό</string>
-    <string name="app_info_intent_error">Αδύνατο άνοιγμα των στοιχείων της εφαρμογής Cloudstream.</string>
+    <string name="app_info_intent_error">Αδύνατο άνοιγμα των στοιχείων της εφαρμογής CineFlow.</string>
     <string name="favorites_list_name">Αγαπημένα</string>
     <string name="favorite_added">%s προστέθηκε στα αγαπημένα</string>
     <string name="favorite_removed">%s αφαιρέθηκε από τα αγαπημένα</string>

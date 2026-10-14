@@ -108,7 +108,7 @@
     <string name="filler" formatted="true">Relleno</string>
     <string name="duration_format" formatted="true">%d min</string>
     <string name="app_name">CineFlow</string>
-    <string name="play_with_app_name">Reproducir con Cloudstream</string>
+    <string name="play_with_app_name">Reproducir con CineFlow</string>
     <string name="title_home">Inicio</string>
     <string name="title_search">Buscar</string>
     <string name="title_downloads">Descargas</string>

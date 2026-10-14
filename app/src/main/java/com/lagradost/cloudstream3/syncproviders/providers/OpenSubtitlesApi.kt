@@ -42,7 +42,7 @@ class OpenSubtitlesApi : SubtitleAPI() {
         const val TAG = "OPENSUBS"
         const val COOLDOWN_DURATION: Long = 1000L * 30L // CoolDown if 429 error code in ms
         var currentCoolDown: Long = 0L
-        const val userAgent = "Cloudstream3 v0.2"
+        const val userAgent = "CineFlow v1.0"
         val headers = mapOf("user-agent" to userAgent, "Api-Key" to API_KEY)
     }
 

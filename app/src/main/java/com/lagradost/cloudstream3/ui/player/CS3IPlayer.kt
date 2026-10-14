@@ -1126,7 +1126,7 @@ class CS3IPlayer : IPlayer {
                     // pipeline is touched — same behaviour as before this feature existed.
                     val isCompressorEnabled = settingsManager.getBoolean(
                         context.getString(R.string.compressor_enabled_key),
-                        false
+                        true
                     )
                     compressor = if (isCompressorEnabled) DynamicRangeCompressor().apply { restoreSavedSettings() } else null
 

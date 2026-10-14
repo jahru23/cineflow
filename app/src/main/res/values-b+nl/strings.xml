@@ -611,7 +611,7 @@
     <string name="open_downloaded_repo">Open repository</string>
     <string name="battery_dialog_title">Batterij-optimalisatie uitschakelen</string>
     <string name="app_unrestricted_toast">Batterijgebruik van app is reeds ingesteld als onbegrensd</string>
-    <string name="app_info_intent_error">Niet in staat Cloudstreams App-info te openen.</string>
+    <string name="app_info_intent_error">Niet in staat CineFlows App-info te openen.</string>
     <string name="sort_episodes_number_asc">Aflevering (Oplopend)</string>
     <string name="sort_episodes_number_desc">Aflevering (Aflopend)</string>
     <string name="sort_episodes_rating_high_low">Beoordeling (Hoogste)</string>
@@ -651,7 +651,7 @@
     <string name="test_extensions_summary">Deze test is alleen bedoeld voor ontwikkelaars en bevestigt noch ontkent de werking van een extensie.</string>
     <string name="auth_locally">Lokale authenticatie</string>
     <string name="video_info">Media info</string>
-    <string name="download_all_plugins_from_repo">Waarschuwing: Cloudstream is niet verandwoordelijk voor het gebruik van extensies van derden en biedt hier ook geen ondersteuning voor!</string>
+    <string name="download_all_plugins_from_repo">Waarschuwing: CineFlowis niet verandwoordelijk voor het gebruik van extensies van derden en biedt hier ook geen ondersteuning voor!</string>
     <string name="player_settings_select_cast_device">Cast apparaat selecteren</string>
     <string name="clipboard_permission_error">Fout bij toegang tot het Klembord, Probeer het opnieuw.</string>
     <string name="clipboard_unknown_error">Fout bij het kopiëren. Kopieer alsjeblieft de logcat en neem contact op met de app-ondersteuning.</string>

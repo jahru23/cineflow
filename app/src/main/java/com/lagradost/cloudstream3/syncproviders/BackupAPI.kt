@@ -2,7 +2,7 @@ package com.lagradost.cloudstream3.syncproviders
 
 /** Work in progress */
 abstract class BackupAPI : AuthAPI() {
-    open val filename : String = "cloudstream-backup.json"
+    open val filename : String = "cineflow-backup.json"
 
     /** Get the backup file as a JSON string from the remote storage. Return null if not found/empty */
     @Throws

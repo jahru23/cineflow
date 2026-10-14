@@ -199,10 +199,13 @@ object PluginManager {
         return getKey<Array<PluginData>>(PLUGINS_KEY_LOCAL) ?: emptyArray()
     }
 
-    private val CLOUD_STREAM_FOLDER =
+    private val CINEFLOW_FOLDER =
+        Environment.getExternalStorageDirectory().absolutePath + "/CineFlow/"
+    private val LEGACY_CLOUD_STREAM_FOLDER =
         Environment.getExternalStorageDirectory().absolutePath + "/Cloudstream3/"
 
-    private val LOCAL_PLUGINS_PATH = CLOUD_STREAM_FOLDER + "plugins"
+    private val LOCAL_PLUGINS_PATH = CINEFLOW_FOLDER + "plugins"
+    private val LEGACY_LOCAL_PLUGINS_PATH = LEGACY_CLOUD_STREAM_FOLDER + "plugins"
 
     var currentlyLoading: String? = null
 
@@ -528,23 +531,24 @@ object PluginManager {
     suspend fun ___DO_NOT_CALL_FROM_A_PLUGIN_loadAllLocalPlugins(context: Context, forceReload: Boolean) {
         assertNonRecursiveCallstack()
 
-        val dir = File(LOCAL_PLUGINS_PATH)
+        val primaryDir = File(LOCAL_PLUGINS_PATH)
+        val legacyDir = File(LEGACY_LOCAL_PLUGINS_PATH)
+        val appSpecificLocalDir = File(context.getExternalFilesDir(null), "local_plugins")
 
-        if (!dir.exists()) {
-            val res = dir.mkdirs()
-            if (!res) {
-                Log.w(TAG, "Failed to create local directories")
-                // We have tried to load local plugins, but exit early.
-                // This needs to be true to prevent the downloader waiting for plugins.
-                loadedLocalPlugins = true
-                return
-            }
+        if (!primaryDir.exists()) {
+            primaryDir.mkdirs()
+        }
+        if (!appSpecificLocalDir.exists()) {
+            appSpecificLocalDir.mkdirs()
         }
 
-        val sortedPlugins = dir.listFiles()
-        // Always sort plugins alphabetically for reproducible results
+        val dirsToScan = listOf(primaryDir, legacyDir, appSpecificLocalDir)
+        val sortedPlugins = dirsToScan.filter { it.exists() && it.canRead() }
+            .flatMap { it.listFiles()?.toList() ?: emptyList() }
+            .filter { it.isFile && (it.extension == "zip" || it.extension == "cs3") }
+            .distinctBy { it.name }
 
-        Log.d(TAG, "Files in '${LOCAL_PLUGINS_PATH}' folder: ${sortedPlugins?.size}")
+        Log.d(TAG, "Files in local plugin folders: ${sortedPlugins.size}")
 
         // Use app-specific external files directory and copy the file there.
         // We have to do this because on Android 14+, it otherwise gives SecurityException
@@ -557,7 +561,7 @@ object PluginManager {
         // Make sure all local plugins are fully refreshed.
         removeKey(PLUGINS_KEY_LOCAL)
 
-        sortedPlugins?.sortedBy { it.name }?.amap { file ->
+        sortedPlugins.sortedBy { it.name }.amap { file ->
             try {
                 val destinationFile = File(pluginDirectory, file.name)
 
@@ -600,12 +604,20 @@ object PluginManager {
      **/
     fun checkSafeModeFile(): Boolean {
         return safe {
-            val folder = File(CLOUD_STREAM_FOLDER)
-            if (!folder.exists()) return@safe false
-            val files = folder.listFiles { _, name ->
-                name.equals("safe", ignoreCase = true)
+            val appExt = CloudStreamApp.context?.getExternalFilesDir(null)
+            val folders = listOfNotNull(
+                File(CINEFLOW_FOLDER),
+                File(LEGACY_CLOUD_STREAM_FOLDER),
+                appExt
+            )
+            folders.any { folder ->
+                if (!folder.exists()) false
+                else {
+                    folder.listFiles { _, name ->
+                        name.equals("safe", ignoreCase = true)
+                    }?.any() == true
+                }
             }
-            files?.any()
         } ?: false
     }
 

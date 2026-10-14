@@ -84,7 +84,7 @@
             android:icon="@drawable/ic_compressor_24"
             android:summary="@string/compressor_setting_summary"
             android:title="@string/compressor_setting"
-            app:defaultValue="false"
+            app:defaultValue="true"
             app:key="@string/compressor_enabled_key" />
         <SwitchPreference
             android:icon="@drawable/speedup"

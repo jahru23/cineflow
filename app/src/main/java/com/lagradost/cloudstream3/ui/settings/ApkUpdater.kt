@@ -29,7 +29,7 @@ import java.security.DigestException
 import java.security.MessageDigest
 
 object ApkUpdater : AppUpdater {
-    private const val APP_UPDATE_NAME = "CloudStream"
+    private const val APP_UPDATE_NAME = "CineFlow"
     private const val APP_UPDATE_SUFFIX = "apk"
 
     @Throws

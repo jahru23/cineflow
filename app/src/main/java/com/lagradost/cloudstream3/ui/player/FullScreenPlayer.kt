@@ -1414,7 +1414,7 @@ open class FullScreenPlayer : AbstractPlayerFragment<FragmentPlayerBinding>(
                 )
                 playBackCompressorEnabled = settingsManager.getBoolean(
                     ctx.getString(R.string.compressor_enabled_key),
-                    false
+                    true
                 )
                 playerRotateEnabled = settingsManager.getBoolean(
                     ctx.getString(R.string.rotate_video_key),
