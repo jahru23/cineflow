@@ -61,8 +61,6 @@
     <string name="subs_font">ooo-ahah</string>
     <string name="search_provider_text_providers">aauuhaauugghhahhh ohaauugghhouuhhh</string>
     <string name="search_provider_text_types">ahhhahoooohhaa ahhhoohahh</string>
-    <string name="benene_count_text">%d ooo-ahah ooooo ahhhahooo aauuhah ouuhhh</string>
-    <string name="benene_count_text_none">oouuhoooooahhaaahhu</string>
     <string name="subs_auto_select_language">oooohhaaaaa ahhhahh oooohh</string>
     <string name="subs_download_languages">ahaaahhu aahoooaauugghh aaaghhoha</string>
     <string name="subs_hold_to_reset_to_default">oohoohohaoha haaohaauugghhaaahhuoouuhahhaaaghh</string>
@@ -96,8 +94,6 @@
     <string name="lightnovel">ooo-ahahoh ohaaauugghh ahhh haaahooo</string>
     <string name="anim">ooooohaa ohaaaaaaahoooahoooaaaghh</string>
     <string name="discord">ooooohaa ahhh aauuhahhahh</string>
-    <string name="benene">aaaaaoooooaoouuhaauugghhaauuh</string>
-    <string name="benene_des">ahooo aaaghh</string>
     <string name="app_language">haaooh</string>
     <string name="no_chromecast_support_toast">aauugghhoh ouuhhh ohaaauugghhaaahhuoouuhah</string>
     <string name="no_links_found_toast">oh ohaaaaghhah ahhha</string>
@@ -489,7 +485,7 @@
     <string name="episode_upcoming_format" formatted="true">uuuugggg og %s</string>
     <string name="custom_media_singular">uuugg</string>
     <string name="app_unrestricted_toast">ooh oooohhh uuuhh ak aaaaggg aak ag uuuugggaaaak</string>
-    <string name="app_info_intent_error">uuuugg ah uuhh CloudStream uuh uuhh</string>
+    <string name="app_info_intent_error">uuuugg ah uuhh CineFlow uuh uuhh</string>
     <string name="pref_category_security">oooohhhg</string>
     <string name="pref_category_accounts">uuuugggg</string>
     <string name="downloads_empty">uuuhh aah uuuugggog ug aaaagggog</string>

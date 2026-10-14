@@ -14,8 +14,8 @@
     <string name="new_update_format" formatted="true">အပ်ဒိတ်အသစ်! \n%1$s -&gt; %2$s</string>
     <string name="filler" formatted="true">စစ်ထုတ်မှု</string>
     <string name="duration_format" formatted="true">%d မိနစ်</string>
-    <string name="app_name">CloudStream</string>
-    <string name="play_with_app_name">CloudStream ဖြင့်ကြည့်ရန်</string>
+    <string name="app_name">CineFlow</string>
+    <string name="play_with_app_name">CineFlow ဖြင့်ကြည့်ရန်</string>
     <string name="title_home">ပင်မ</string>
     <string name="title_search">ရှာရန်</string>
     <string name="search_hint">ရှာရန်…</string>
@@ -49,7 +49,6 @@
     <string name="subs_font">ဖောင့်</string>
     <string name="subs_font_size">ဖောင့် အရွယ်အစား</string>
     <string name="search_provider_text_types">အမျိုးအစားများအသုံးပြု၍ရှာရန်</string>
-    <string name="benene_count_text">%d အက်ပ်ဖန်တီးသူတွေကိုကျေးဇူးတင်ကြောင်းပို့မည်</string>
     <string name="subs_auto_select_language">အလိုအလျောက် ဘာသာစကားရွေးချယ်ခြင်း</string>
     <string name="subs_download_languages">ဒေါင်းလုဒ် လုပ်ထားသော ဘာသာစကားများ</string>
     <string name="subs_hold_to_reset_to_default">မူရင်းပုံစံအတိုင်းပြန်ထားရန်ဖိထားပါ</string>
@@ -238,7 +237,6 @@
     <string name="home_more_info">ပိုမို၍</string>
     <string name="search_provider_text_providers">ပ့ံပိုးပေးသောဝန်ဆောင်မှုများအသုံးပြု၍ရှာရန်</string>
     <string name="home_expanded_hide">ဝုက်ရန်</string>
-    <string name="benene_count_text_none">ကျေးဇူးတင်ကြောင်းမပို့ရသေး</string>
     <string name="home_play">ကြည့်မည်</string>
     <string name="home_info">အချက်အလက်</string>
     <string name="subs_subtitle_languages">စာတန်းထိုး ဘာသာစကား</string>
@@ -275,8 +273,6 @@
     <string name="lightnovel">တူညီသောအက်ပ်ရေးသားသူများ၏ ဝတ္ထုရှည်များဖတ်နိုင်သည့် အက်ပ်</string>
     <string name="anim">တူညီသောအက်ပ်ရေးသားသူများ၏ Anime အက်ပ်</string>
     <string name="discord">Discord ကိုဝင်ရန်</string>
-    <string name="benene">အက်ပ်ရေးသားသူများထံ ကျေးဇူးတင်စာပို့မည်</string>
-    <string name="benene_des">ပေးခဲ့သောစာအရေအတွက်</string>
     <string name="app_language">အက်ပ်ဘာသာစကား</string>
     <string name="subs_default_reset_toast">မူလအခြေအနေများကိုပြန်ထားပါ</string>
     <string name="season_format">%1$s %2$d%3$s</string>
@@ -339,7 +335,7 @@
     <string name="apk_installer_legacy">သမားရိုးကျ</string>
     <string name="apk_installer_package_installer">ထည့်သွင်းသူ</string>
     <string name="delayed_update_notice">ထွက်ချိန်တွင် အက်ပ်ကို အပ်ဒိတ်လုပ်ပါမည်</string>
-    <string name="blank_repo_message">CloudStream တွင် မူရင်းအတိုင်း ထည့်သွင်းထားသည့်ဆိုက်များ မရှိပါ။ ရီပိုစစ်ထရီများ မှ ဆိုဒ် များကို ထည့်သွင်းရန်လိုအပ်သည်။ \n \nSky UK Limited မှ ဦးနှောက်မဲ့ DMCA ကို ဖယ်ရှားလိုက်ခြင်းကြောင့် 🤮 ကျွန်ုပ်တို့သည် ရီပိုစစ်ထရီဆိုဒ်ကို အက်ပ်တွင် ချိတ်ဆက်၍မရပါ။ \n \nကျွန်ုပ်တို့၏ Discord တွင်ပါဝင်ပါ သို့မဟုတ် အွန်လိုင်းတွင်ရှာဖွေပါ။</string>
+    <string name="blank_repo_message">CineFlow တွင် မူရင်းအတိုင်း ထည့်သွင်းထားသည့်ဆိုက်များ မရှိပါ။ ရီပိုစစ်ထရီများ မှ ဆိုဒ် များကို ထည့်သွင်းရန်လိုအပ်သည်။ \n \nSky UK Limited မှ ဦးနှောက်မဲ့ DMCA ကို ဖယ်ရှားလိုက်ခြင်းကြောင့် 🤮 ကျွန်ုပ်တို့သည် ရီပိုစစ်ထရီဆိုဒ်ကို အက်ပ်တွင် ချိတ်ဆက်၍မရပါ။ \n \nကျွန်ုပ်တို့၏ Discord တွင်ပါဝင်ပါ သို့မဟုတ် အွန်လိုင်းတွင်ရှာဖွေပါ။</string>
     <string name="view_public_repositories_button">အခြားသူများ၏ရီပိုစစ်ထရီများကိုရှာဖွေမည်</string>
     <string name="tracks">အသံများ</string>
     <string name="audio_tracks">အသံဖိုင်များ</string>

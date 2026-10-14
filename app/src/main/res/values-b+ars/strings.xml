@@ -105,12 +105,10 @@
     <string name="swipe_to_change_settings_des">قم بالتمرير لأعلى أو لأسفل على الجانب الأيسر أو الأيمن لتغيير السطوع أو مستوى الصوت</string>
     <string name="autoplay_next_settings">التشغيل التلقائي للحلقة القادمة</string>
     <string name="lightnovel">تطبيق رواية خفيفة من نفس المطورين</string>
-    <string name="benene">أعط بينيني للمطورين</string>
     <string name="github">جيتهب</string>
     <string name="anim">تطبيق انيمي من نفس المطورين</string>
     <string name="app_language">لغة التطبيق</string>
     <string name="discord">انضم إلى الديسكورد</string>
-    <string name="benene_des">بنيني معطا</string>
     <string name="apk_installer_settings_des">بعض الهواتف لا تدعم مثبت الحزمة الجديد. جرب الخيار القديم إذا لم يتم تثبيت التحديثات.</string>
     <string name="apk_installer_settings">مثبت تتبيق</string>
     <string name="test_passed">اجتاز</string>
@@ -233,8 +231,6 @@
     <string name="action_open_watching">مزيد من المعلومات</string>
     <string name="search_provider_text_providers">البحث باستخدام مقدمي الخدمات</string>
     <string name="search_provider_text_types">البحث باستخدام الأنواع</string>
-    <string name="benene_count_text">بنيني الى المطورين %d تم منح</string>
-    <string name="benene_count_text_none">لم يتم تقديم بنيني</string>
     <string name="subs_download_languages">تحميل اللغات</string>
     <string name="subs_subtitle_languages">لغة الترجمة</string>
     <string name="subs_hold_to_reset_to_default">اضغط لإعادة التعيين إلى الوضع الافتراضي</string>

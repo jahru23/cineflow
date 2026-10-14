@@ -18,7 +18,7 @@
     <string name="resize_zoom">Soo dhawee</string>
     <string name="all">Dhammaan</string>
     <string name="tracks">Muusik</string>
-    <string name="play_with_app_name">Ku daawo CloudStream</string>
+    <string name="play_with_app_name">Ku daawo CineFlow</string>
     <string name="title_settings">Habaynta</string>
     <string name="filler" formatted="true">Buuxiye</string>
     <string name="home_change_provider_img_des">Beddel qaybiyaha</string>
@@ -106,7 +106,6 @@
     <string name="pref_filter_search_quality">Qari tayada muqaalka aad dooratay natiijada waxa aad raadiso</string>
     <string name="advanced_search">Raadin heer-sare ah</string>
     <string name="show_fillers_settings">Xalqad buuxis ah tusi anemiga</string>
-    <string name="benene">Dhiseyaasha appka sii beniin</string>
     <string name="storage_error">Way fashilantay dejintu, hubi ogolaanshaha isticmaalka kaydka</string>
     <string name="episode_action_chromecast_episode">Xalqadda koromakaastiga</string>
     <string name="episode_action_download_subtitle">Soo dejiso Qoraal-hoosaadyada</string>
@@ -140,8 +139,6 @@
     <string name="preview_background_img_des">Muuq dambeedka</string>
     <string name="search_provider_text_providers">Ku raadi qaybiyeyaasha</string>
     <string name="search_provider_text_types">Ku raadi noocyada</string>
-    <string name="benene_count_text">%d oo beniin ayaad siisey dhiseyaasha</string>
-    <string name="benene_count_text_none">Wax beniin ah maad bixin</string>
     <string name="subs_auto_select_language">Iskeed-u-doorashada luuqadda</string>
     <string name="subs_download_languages">Luuqadda dejinta</string>
     <string name="subs_subtitle_languages">Luuqadda Qoraal-hoosaadka</string>
@@ -165,7 +162,6 @@
     <string name="anim">Anime app, isla dhiseyaashan appkan baa leh</string>
     <string name="no_season">Kal ma leh</string>
     <string name="discord">Discord naga soo qabo</string>
-    <string name="benene_des">Beeniinyada aad bixisey</string>
     <string name="app_language">Luuqadda</string>
     <string name="no_chromecast_support_toast">Bixiyahan kuma shaqeeyo koromakaastiga</string>
     <string name="subs_default_reset_toast">Asalkiisii hore kusoo celi</string>
@@ -425,7 +421,7 @@
     <string name="plugins_not_downloaded" formatted="true">Aan dejinayn: %d</string>
     <string name="plugins_updated" formatted="true">Waxa la cusbooneysiiyey %d sidkane</string>
     <string name="blank_repo_message">Ugu horreyn cloudstream ma laha wax websaydyo uu filimaanta kasoo xigto, waxay noqonaysaa inaad adigu rakibato reboositarradooda. Sababtuna waa in mar dhexdaas ah na dacweeyeen shirkadda Sky UK Limited, markaa si aan mar dambe taasi u dhicin anagu kuma rakibi karno...\n\nDiscord naga soo qabo ama internetka ka baadh.</string>
-    <string name="download_all_plugins_from_repo">Digniin: CloudStream mas\'uuliyad kama qaadanayo isticmaalka kordhinnada (extensions) dhinac saddexaad mana bixiyo wax taageero ah oo iyaga ku saabsan!</string>
+    <string name="download_all_plugins_from_repo">Digniin: CineFlow mas\'uuliyad kama qaadanayo isticmaalka kordhinnada (extensions) dhinac saddexaad mana bixiyo wax taageero ah oo iyaga ku saabsan!</string>
     <string name="result_poster_img_des">Boodhka</string>
     <string name="episode_poster_img_des">Boodhka xalqadda</string>
     <string name="home_main_poster_img_des">Boodhka weyn</string>
@@ -504,6 +500,5 @@
     <string name="show_player_metadata_overlay">Muuji xogta dulsaaran muuqaalka</string>
     <string name="show_cast_in_details">Soo bandhig guddiga dhibidda</string>
     <string name="automatic_plugin_download_mode_title">Dooro habka loo kala saarayo soo dejinta plugins-ka</string>
-    <string name="install_prerelease">Soo deji nooca hordhaca ah</string>
     <string name="prerelease_already_installed">Nooca hordhaca ah horey ayaa loo soo dejiyay.</string>
 </resources>

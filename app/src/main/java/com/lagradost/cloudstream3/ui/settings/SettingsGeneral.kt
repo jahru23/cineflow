@@ -31,7 +31,6 @@ import com.lagradost.cloudstream3.network.initClient
 import com.lagradost.cloudstream3.ui.BasePreferenceFragmentCompat
 import com.lagradost.cloudstream3.ui.settings.Globals.EMULATOR
 import com.lagradost.cloudstream3.ui.settings.Globals.TV
-import com.lagradost.cloudstream3.ui.settings.Globals.beneneCount
 import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.getPref
 import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.hideOn
 import com.lagradost.cloudstream3.ui.settings.SettingsFragment.Companion.setPaddingBottom
@@ -92,7 +91,6 @@ val appLanguages = arrayListOf(
     Pair("Lietuvių kalba", "lt"),
     Pair("Magyar", "hu"),
     Pair("Malti", "mt"),
-    Pair("mmmm... monke", "qt"),
     Pair("Nederlands", "nl"),
     Pair("Norsk bokmål", "no"),
     Pair("Norsk nynorsk", "nn"),

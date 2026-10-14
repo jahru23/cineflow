@@ -109,7 +109,7 @@
     <string name="home_next_random_img_des">அடுத்து ஏதாவது</string>
     <string name="browser">உலாவி</string>
     <string name="duration_format" formatted="true">%d நிமி</string>
-    <string name="play_with_app_name">CloudStream-உடன் இயக்கு</string>
+    <string name="play_with_app_name">CineFlow-உடன் இயக்கு</string>
     <string name="new_update_format" formatted="true">புதிய புதுப்பிப்பு உள்ளது\n%1$s-&gt;%2$s</string>
     <string name="filler" formatted="true">நிரப்பி</string>
     <string name="search_poster_img_des">போச்டர்</string>
@@ -134,7 +134,6 @@
     <string name="hls_playlist">எச்.எல்.எச் பிளேலிச்ட்</string>
     <string name="skip_type_mixed_ed">கலப்பு முடிவு</string>
     <string name="app_name">கிளவுட்ச்ட்ரீம்</string>
-    <string name="benene_count_text_none">பெனின்கள் எதுவும் கொடுக்கப்படவில்லை</string>
     <string name="eigengraumode_settings">பிளேபேக் விரைவு</string>
     <string name="swipe_to_seek_settings">தேட ச்வைப்</string>
     <string name="backup_settings">தரவை காப்புப் பிரதி எடுக்கவும்</string>
@@ -177,7 +176,6 @@
     <string name="plugin_deleted">சொருகி நீக்கப்பட்டது</string>
     <string name="site">தளம்</string>
     <string name="safe_mode_title">பாதுகாப்பான பயன்முறை</string>
-    <string name="benene_des">கொடுக்கப்பட்ட பெனீன்</string>
     <string name="movies">திரைப்படங்கள்</string>
     <string name="no">இல்லை</string>
     <string name="discord">முரண்பாட்டில் சேரவும்</string>
@@ -286,7 +284,7 @@
     <string name="no_repository_found_error">களஞ்சியம் கிடைக்கவில்லை, முகவரி ஐ சரிபார்த்து VPN ஐ முயற்சிக்கவும்</string>
     <string name="batch_download">தொகுதி பதிவிறக்கம்</string>
     <string name="plugin_singular">சொருகு</string>
-    <string name="download_all_plugins_from_repo">எச்சரிக்கை: மூன்றாம் தரப்பு நீட்டிப்புகளைப் பயன்படுத்துவதற்கு CloudStream எந்தப் பொறுப்பையும் ஏற்காது, அவற்றிற்கு எந்த ஆதரவையும் வழங்காது!</string>
+    <string name="download_all_plugins_from_repo">எச்சரிக்கை: மூன்றாம் தரப்பு நீட்டிப்புகளைப் பயன்படுத்துவதற்கு CineFlow எந்தப் பொறுப்பையும் ஏற்காது, அவற்றிற்கு எந்த ஆதரவையும் வழங்காது!</string>
     <string name="extension_language">மொழி</string>
     <string name="revert">திரும்பவும்</string>
     <string name="subscription_deleted">%s இலிருந்து குழுவிலகப்பட்டது</string>
@@ -373,7 +371,6 @@
     <string name="next_season_episode_format" formatted="true">சீசன் %1$d எபிசோட் %2$d வெளியிடப்படும்</string>
     <string name="update_started">புதுப்பிப்பு தொடங்கியது</string>
     <string name="recommendations_tooltip">பரிந்துரைகளைக் காட்டு</string>
-    <string name="benene_count_text">டெவ்சுக்கு வழங்கப்பட்ட %d பெனின்கள்</string>
     <string name="speed_setting_summary">பிளேயரில் வேக விருப்பத்தை சேர்க்கிறது</string>
     <string name="restore_failed_format" formatted="true">கோப்பு %s இலிருந்து தரவை மீட்டெடுப்பதில் தோல்வி</string>
     <string name="library">நூலகம்</string>
@@ -384,7 +381,6 @@
     <string name="updates_settings_des">பயன்பாட்டைத் தொடங்கிய பின் புதிய புதுப்பிப்புகளைத் தானாகவே தேடுங்கள்.</string>
     <string name="redo_setup_process">அமைவு செயல்முறை மீண்டும்</string>
     <string name="lightnovel">அதே தேவ்சின் ஒளி நாவல் பயன்பாடு</string>
-    <string name="benene">தேவ்சுக்கு ஒரு பெனீன் கொடுங்கள்</string>
     <string name="episode_format" formatted="true">%1$d %2$s</string>
     <string name="no_episodes_found">அத்தியாயங்கள் எதுவும் கிடைக்கவில்லை</string>
     <string name="delete">அழி</string>
@@ -684,7 +680,6 @@
     <string name="search_suggestions_des">தட்டச்சு செய்யும் போது தேடல் பரிந்துரைகளைக் காட்டு</string>
     <string name="clear_suggestions">தெளிவான பரிந்துரைகள்</string>
     <string name="show_cast_in_details">காச்ட் பேனலைக் காட்டு</string>
-    <string name="install_prerelease">வெளியீட்டிற்கு முந்தைய பதிப்பை நிறுவவும்</string>
     <string name="prerelease_already_installed">முன் வெளியீடு ஏற்கனவே நிறுவப்பட்டுள்ளது.</string>
     <string name="prerelease_install_failed">முன் வெளியீட்டை நிறுவுவதில் தோல்வி.</string>
     <string name="episode_action_play_mirror">கண்ணாடியை விளையாடு</string>"

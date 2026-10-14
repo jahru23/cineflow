@@ -13,7 +13,7 @@
     <string name="player_speed_text_format" formatted="true">Avspillingshastighet (%.2fx)</string>
     <string name="rated_format" formatted="true">Vurdert: %.1f</string>
     <string name="new_update_format" formatted="true">Ny oppdatering funnet! \n%1$s -&gt; %2$s</string>
-    <string name="app_name">CloudStream</string>
+    <string name="app_name">CineFlow</string>
     <string name="title_home">Hjem</string>
     <string name="title_search">Søk</string>
     <string name="title_downloads">Nedlastinger</string>
@@ -76,8 +76,6 @@
     <string name="subs_font_size">Skriftstørrelse</string>
     <string name="search_provider_text_providers">Søk med leverandører</string>
     <string name="search_provider_text_types">Søk med typer</string>
-    <string name="benene_count_text">%d Benenes gitt til utvikler</string>
-    <string name="benene_count_text_none">Nei Benenes gitt</string>
     <string name="subs_auto_select_language">Velg språk automatisk</string>
     <string name="subs_download_languages">Last ned språk</string>
     <string name="subs_hold_to_reset_to_default">Hold inne for å tilbakestille</string>
@@ -115,8 +113,6 @@
     <string name="lightnovel">Light novel app av samme devs</string>
     <string name="anim">Anime app av samme devs</string>
     <string name="discord">Bli med Discord</string>
-    <string name="benene">Gi en benene til devs</string>
-    <string name="benene_des">Gitt benene</string>
     <string name="app_language">appspråk</string>
     <string name="no_chromecast_support_toast">Denne leverandøren har ingen Chromecast-støtte</string>
     <string name="no_links_found_toast">Ingen lenker funnet</string>
@@ -195,7 +191,7 @@
     <string name="sort_clear">Tøm</string>
     <string name="category_account">Kontoer</string>
     <string name="app_dub_sub_episode_text_format" formatted="true">%1$s Ep %2$d</string>
-    <string name="play_with_app_name">Spill med CloudStream</string>
+    <string name="play_with_app_name">Spill med CineFlow</string>
     <string name="sort_copy">Kopier</string>
     <string name="next_episode_format" formatted="true">Episode %d vil bli sluppet om</string>
     <string name="next_episode_time_hour_format" formatted="true">%1$dt %2$dm</string>
@@ -370,7 +366,7 @@
     <string name="error_invalid_url">Ugyldig nettadresse</string>
     <string name="batch_download">Knippe-nedlasting</string>
     <string name="delete_repository">Slett pakkebrønn</string>
-    <string name="blank_repo_message">CloudStream har ingen sider installert som forvalg. Du må installere sidene fra pakkebrønner. \n \nSom følge av en hjernedød DMCA-forespørsel fra Sky UK Limited 🤮 kan vi ikke lenke til pakkebrønnssiden i programmet. \n \nTa del i vår Discord, eller søk på nett.</string>
+    <string name="blank_repo_message">CineFlow har ingen sider installert som forvalg. Du må installere sidene fra pakkebrønner. \n \nSom følge av en hjernedød DMCA-forespørsel fra Sky UK Limited 🤮 kan vi ikke lenke til pakkebrønnssiden i programmet. \n \nTa del i vår Discord, eller søk på nett.</string>
     <string name="subtitle_offset_extra_hint_before_format">Bruk dette hvis undertekster vises %d ms for sent</string>
     <string name="plugin_loaded">Programtillegg innlastet</string>
     <string name="audio_tracks">Lydspor</string>

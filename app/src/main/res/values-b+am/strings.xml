@@ -35,8 +35,8 @@
     <string name="title_settings">ቅንብሮች</string>
     <string name="title_search">መፈለጊያ</string>
     <string name="loading">በመጫን ላይ…</string>
-    <string name="app_name">CloudStream</string>
-    <string name="play_with_app_name">በCloudStream አጫውት</string>
+    <string name="app_name">CineFlow</string>
+    <string name="play_with_app_name">በCineFlow አጫውት</string>
     <string name="action_remove_from_bookmarks">ያስወግዱ</string>
     <string name="error_bookmarks_text">ዕልባቶች</string>
     <string name="download_started">ማውረድ ተጀምሯል</string>
@@ -95,9 +95,7 @@
     <string name="continue_watching">መመልከትዎን ይቀጥሉ</string>
     <string name="subs_download_languages">ቋንቋዎችን ያውርዱ</string>
     <string name="search_provider_text_providers">አቅራቢዎችን በመጠቀም ይፈልጉ</string>
-    <string name="benene_count_text">%d ሙዝ ለዴቭሎፐሮቹ ተሰጥቷል</string>
     <string name="vpn_might_be_needed">ይህ አቅራቢ በትክክል እንዲሰራ ቪፒኤን ሊያስፈልግ ይችላል</string>
-    <string name="benene_count_text_none">ምንም ሙዝ አልተሰጠም</string>
     <string name="subs_subtitle_languages">የትርጉም ጽሑፍ ቋንቋ</string>
     <string name="provider_info_meta">ሜታዳታ በድረ-ገጹ ላይ አይገኝም፣ ቪድዮ መጫን ሜታዳታ ድረ-ገጹ ላይ ከሌለ አይሳካም።</string>
     <string name="vpn_torrent">ይህ አቅራቢ ቶረንት ነው፣ ቪፒኤን ይመከራል</string>

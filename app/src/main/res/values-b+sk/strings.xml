@@ -11,7 +11,7 @@
     <string name="result_open_in_browser">Otvoriť v prehliadači</string>
     <string name="skip_loading">Preskočiť načítavanie</string>
     <string name="cast_format" formatted="true">Hrajú: %s</string>
-    <string name="app_name">CloudStream</string>
+    <string name="app_name">CineFlow</string>
     <string name="result_poster_img_des">Plagát</string>
     <string name="next_episode_time_day_format" formatted="true">%1$dd %2$dh %3$dm</string>
     <string name="next_episode_time_min_format" formatted="true">%dm</string>
@@ -19,7 +19,7 @@
     <string name="search_poster_img_des">Plagát</string>
     <string name="episode_poster_img_des">Plagát epizódy</string>
     <string name="home_main_poster_img_des">Hlavný plagát</string>
-    <string name="play_with_app_name">Prehrať s CloudStream</string>
+    <string name="play_with_app_name">Prehrať s CineFlow</string>
     <string name="title_settings">Nastavenia</string>
     <string name="search_hint_site" formatted="true">Hľadať %s…</string>
     <string name="popup_resume_download">Pokračovať v sťahovaní</string>
@@ -87,9 +87,7 @@
     <string name="subs_auto_select_language">Automaticky vybrať jazyk</string>
     <string name="subs_subtitle_languages">Jazyk titulkov</string>
     <string name="subs_font_size">Veľkosť písma</string>
-    <string name="benene_count_text_none">Nedarovali ste žiadne benény</string>
     <string name="subs_hold_to_reset_to_default">Podržaním obnovíte predvolené nastavenia</string>
-    <string name="benene_count_text">%d benénov darovaných vývojárom</string>
     <string name="subs_download_languages">Stiahnuť jazyky</string>
     <string name="action_remove_watching">Odstrániť</string>
     <string name="vpn_torrent">Tento poskytovateľ je torrent, odporúča sa VPN</string>
@@ -129,8 +127,6 @@
     <string name="lightnovel">Nenáročná aplikácia pre romány od rovnakých vývojárov</string>
     <string name="app_language">Jazyk aplikácie</string>
     <string name="no_links_found_toast">Nenašli sa žiadne odkazy</string>
-    <string name="benene">Darujte benén vývojárom</string>
-    <string name="benene_des">Benén darovaný</string>
     <string name="no_chromecast_support_toast">Tento poskytovateľ nepodporuje Chromecast</string>
     <string name="restore_success">Súbor zálohy načítaný</string>
     <string name="episode_sync_settings_des">Automaticky synchronizovať priebeh sledovania súčasnej epizódy</string>
@@ -358,9 +354,9 @@
     <string name="delete_repository">Zmazať repozitár</string>
     <string name="repository_url_hint">URL adresa repozitára</string>
     <string name="view_public_repositories_button_short">Verejný zoznam</string>
-    <string name="blank_repo_message">CloudStream nemá nainštalované žiadne stránky v predvolenom nastavení. Musíte nainštalovať stránky z repozitára. \n \nPripojte sa k nášmu Discord alebo vyhľadajte online.</string>
+    <string name="blank_repo_message">CineFlow nemá nainštalované žiadne stránky v predvolenom nastavení. Musíte nainštalovať stránky z repozitára. \n \nPripojte sa k nášmu Discord alebo vyhľadajte online.</string>
     <string name="update_notification_failed">Nepodarilo sa nainštalovať novú verziu aplikácie</string>
-    <string name="download_all_plugins_from_repo">Upozornenie: CloudStream 3 nenesie žiadnu zodpovednosť za používanie rozšírenia tretích strán a neposkytuje žiadnu podporu pre nich!</string>
+    <string name="download_all_plugins_from_repo">Upozornenie: CineFlow 3 nenesie žiadnu zodpovednosť za používanie rozšírenia tretích strán a neposkytuje žiadnu podporu pre nich!</string>
     <string name="add_repository">Pridať repozitár</string>
     <string name="repository_name_hint">Názov repozitára</string>
     <string name="view_public_repositories_button">Zobraziť komunitné repozitáre</string>
@@ -466,7 +462,6 @@
     <string name="search_suggestions">Návrhy vyhľadávania</string>
     <string name="search_suggestions_des">Zobraziť návrhy vyhľadávania pri písaní</string>
     <string name="clear_suggestions">Vyčistiť Návrhy</string>
-    <string name="install_prerelease">Nainštalujte pre-release verziu</string>
     <string name="prerelease_already_installed">Pre-release je už nainštalovaný.</string>
     <string name="prerelease_install_failed">Nepodarilo sa nainštalovať pre-release.</string>
     <string name="unsupported_error">Nepodporovaná chyba</string>

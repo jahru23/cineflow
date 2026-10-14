@@ -64,7 +64,6 @@
     <string name="subs_font_size">Розмір шрифту</string>
     <string name="search_provider_text_providers">Пошук за постачальниками</string>
     <string name="search_provider_text_types">Пошук за типами</string>
-    <string name="benene_count_text_none">Жодного банана не надано</string>
     <string name="subs_auto_select_language">Автовибір мови</string>
     <string name="subs_download_languages">Завантажити мови</string>
     <string name="subs_subtitle_languages">Мова субтитрів</string>
@@ -88,9 +87,9 @@
     <string name="swipe_to_change_settings_des">Проведіть угору або вниз із лівого або правого боку, щоби змінити яскравість або гучність</string>
     <string name="autoplay_next_settings_des">Відтворювати наступний епізод після закінчення поточного</string>
     <string name="title_home">Головна</string>
-    <string name="app_name">CloudStream</string>
+    <string name="app_name">CineFlow</string>
     <string name="filler" formatted="true">Філлер</string>
-    <string name="play_with_app_name">Відтворити в CloudStream</string>
+    <string name="play_with_app_name">Відтворити в CineFlow</string>
     <string name="stream">Мережева трансляція</string>
     <string name="type_watching">Переглядаю</string>
     <string name="result_share">Поділитися</string>
@@ -118,7 +117,6 @@
     <string name="subs_outline_color">Колір обведення</string>
     <string name="autoplay_next_settings">Автовідтворення наступного епізоду</string>
     <string name="swipe_to_seek_settings_des">Проведіть збоку в бік, щоби керувати часом відтворення у відео</string>
-    <string name="benene_count_text">Дано %d бананів розробникам</string>
     <string name="player_size_settings">Кнопка зміни розміру програвача</string>
     <string name="action_open_play">@string/home_play</string>
     <string name="vpn_might_be_needed">Для коректної роботи цього постачальника може знадобитися VPN</string>
@@ -153,7 +151,6 @@
     <string name="github">Github</string>
     <string name="lightnovel">Застосунок для ранобе від тих самих розробників</string>
     <string name="anim">Застосунок для аніме від тих самих розробників</string>
-    <string name="benene">Дати бананів розробникам</string>
     <string name="app_language">Мова застосунку</string>
     <string name="no_chromecast_support_toast">Цей постачальник не має підтримування Chromecast</string>
     <string name="no_links_found_toast">Посилань не знайдено</string>
@@ -225,7 +222,6 @@
     <string name="copy_link_toast">Посилання скопійовано до буфера обміну</string>
     <string name="apk_installer_settings_des">Деякі пристрої не підтримують новий встановлювач пакетів. Спробуйте старий варіант, якщо оновлення не встановлюються.</string>
     <string name="discord">Приєднуйтеся до Discord</string>
-    <string name="benene_des">Дано банани</string>
     <string name="year">Рік</string>
     <string name="go_forward_30">+30</string>
     <string name="season_format">%1$s %2$d%3$s</string>
@@ -413,7 +409,7 @@
     <string name="plugins_disabled" formatted="true">Вимкнено: %d</string>
     <string name="plugins_not_downloaded" formatted="true">Не завантажено: %d</string>
     <string name="plugins_updated" formatted="true">Оновлено %d розширень</string>
-    <string name="blank_repo_message">Типово у CloudStream немає жодного встановленого сайту. Вам потрібно встановити сайти зі сховищ.\n\nПриєднуйтеся до нашого Discord або шукайте в інтернеті.</string>
+    <string name="blank_repo_message">Типово у CineFlow немає жодного встановленого сайту. Вам потрібно встановити сайти зі сховищ.\n\nПриєднуйтеся до нашого Discord або шукайте в інтернеті.</string>
     <string name="view_public_repositories_button">Переглянути сховища спільноти</string>
     <string name="view_public_repositories_button_short">Публічний список</string>
     <string name="uppercase_all_subtitles">Усі субтитри великими літерами</string>
@@ -458,7 +454,7 @@
     <string name="plugin_deleted">Розширення видалено</string>
     <string name="is_adult">18+</string>
     <string name="audio_tracks">Аудіодоріжки</string>
-    <string name="download_all_plugins_from_repo">Увага: CloudStream не несе жодної відповідальності за використання сторонніх розширень і не надає жодної підтримки для них!</string>
+    <string name="download_all_plugins_from_repo">Увага: CineFlow не несе жодної відповідальності за використання сторонніх розширень і не надає жодної підтримки для них!</string>
     <string name="player_pref">Бажаний відеопрогравач</string>
     <string name="safe_mode_title">Увімкнено безпечний режим</string>
     <string name="extension_authors">Автори</string>
@@ -561,10 +557,10 @@
     <string name="test_extensions_summary">Ця перевірка лише для розробників і не підтверджує або заперечує роботу жодного розширення.</string>
     <string name="subscribe_tooltip">Сповіщення про новий епізод</string>
     <string name="password_pin_authentication_title">Автентифікація за паролем / PIN-кодом</string>
-    <string name="biometric_authentication_title">Розблокуйте CloudStream</string>
+    <string name="biometric_authentication_title">Розблокуйте CineFlow</string>
     <string name="biometric_setting">Біометричне блокування</string>
     <string name="biometric_setting_summary">Розблоковуйте застосунок за допомогою відбитка пальця, Face ID, PIN-коду, графічного ключа або пароля.</string>
-    <string name="biometric_warning">Щойно було виконано резервне копіювання даних CloudStream. Хоча ймовірність цього вкрай мала, усі пристрої можуть поводитися по-різному. У рідкісних випадках, якщо ви втратите доступ до застосунку, повністю очистіть дані застосунку та відновіть їх із резервної копії. Просимо вибачення за будь-які незручності, що можуть виникнути.</string>
+    <string name="biometric_warning">Щойно було виконано резервне копіювання даних CineFlow. Хоча ймовірність цього вкрай мала, усі пристрої можуть поводитися по-різному. У рідкісних випадках, якщо ви втратите доступ до застосунку, повністю очистіть дані застосунку та відновіть їх із резервної копії. Просимо вибачення за будь-які незручності, що можуть виникнути.</string>
     <string name="biometric_unsupported">Біометрична автентифікація не підтримується на цьому пристрої</string>
     <string name="biometric_prompt_description">Після кількох невдалих спроб вікно запиту зникне. Перезапустіть застосунок, щоби спробувати ще раз.</string>
     <string name="resume_remaining" formatted="true">%s\nзалишилося</string>
@@ -576,9 +572,9 @@
     <string name="clipboard_permission_error">Помилка доступу до буфера обміну, спробуйте ще раз.</string>
     <string name="ok">Гаразд</string>
     <string name="battery_dialog_title">Вимкнути оптимізацію батареї</string>
-    <string name="battery_dialog_message">Щоби забезпечити безперервне завантаження та сповіщення про підписані телепередачі, CloudStream потребує дозволу на роботу у фоновому режимі. Натиснувши «Гаразд», ви побачите діалогове вікно запиту. Натисніть «Дозволити».\n\nЗверніть увагу, що цей дозвіл не означає, що CS3 розряджатиме ваш акумулятор. Він працюватиме у фоновому режимі лише за необхідності, наприклад, під час отримання сповіщень або завантаження відео з офіційних розширень.</string>
+    <string name="battery_dialog_message">Щоби забезпечити безперервне завантаження та сповіщення про підписані телепередачі, CineFlow потребує дозволу на роботу у фоновому режимі. Натиснувши «Гаразд», ви побачите діалогове вікно запиту. Натисніть «Дозволити».\n\nЗверніть увагу, що цей дозвіл не означає, що CS3 розряджатиме ваш акумулятор. Він працюватиме у фоновому режимі лише за необхідності, наприклад, під час отримання сповіщень або завантаження відео з офіційних розширень.</string>
     <string name="app_unrestricted_toast">Споживання батареї застосунком уже змінено на необмежене</string>
-    <string name="app_info_intent_error">Не вдається відкрити подробиці про застосунок CloudStream.</string>
+    <string name="app_info_intent_error">Не вдається відкрити подробиці про застосунок CineFlow.</string>
     <string name="audio_book_singular">Аудіокнига</string>
     <string name="music_singular">Музика</string>
     <string name="custom_media_singular">Медіа</string>
@@ -587,7 +583,7 @@
     <string name="next_season_episode_format" formatted="true">%1$d сезон %2$d епізод вийде через</string>
     <string name="player_settings_select_cast_device">Оберіть пристрій для трансляції</string>
     <string name="episode_action_cast_mirror">Трансляція через дзеркало</string>
-    <string name="cs3wiki">CloudStream Wiki</string>
+    <string name="cs3wiki">CineFlow Wiki</string>
     <string name="pref_category_security">Безпека</string>
     <string name="pref_category_accounts">Облікові записи</string>
     <string name="qr_image">Зображення QR-коду</string>
@@ -702,7 +698,6 @@
     <string name="top_center">Угорі в центрі</string>
     <string name="top_right">Угорі праворуч</string>
     <string name="play_full_series_button">Відтворити весь серіал</string>
-    <string name="install_prerelease">Встановити передрелізну версію</string>
     <string name="prerelease_already_installed">Передрелізна версія вже встановлена.</string>
     <string name="prerelease_install_failed">Не вдалося встановити передрелізну версію.</string>
     <string name="show_episode_text">Текст епізоду</string>

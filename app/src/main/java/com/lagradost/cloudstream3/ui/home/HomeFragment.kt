@@ -99,16 +99,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(
         var currentSpan = 1
 
         private val errorProfilePics = listOf(
-            R.drawable.monke_benene,
-            R.drawable.monke_burrito,
-            R.drawable.monke_coco,
-            R.drawable.monke_cookie,
-            R.drawable.monke_flusdered,
-            R.drawable.monke_funny,
-            R.drawable.monke_like,
-            R.drawable.monke_party,
-            R.drawable.monke_sob,
-            R.drawable.monke_drink,
+            R.drawable.ic_profile_fallback,
         )
 
         val errorProfilePic = errorProfilePics.random()

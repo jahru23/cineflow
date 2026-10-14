@@ -36,10 +36,10 @@
     <string name="rated_format" formatted="true">Оценили: %.1f</string>
     <string name="new_update_format" formatted="true">Новое обновление найдено! \n%1$s -&gt; %2$s</string>
     <string name="filler" formatted="true">Заполнитель</string>
-    <string name="app_name">CloudStream</string>
+    <string name="app_name">CineFlow</string>
     <string name="action_remove_from_bookmarks">Убрать</string>
     <string name="app_dub_sub_episode_text_format" formatted="true">%1$s Ep %2$d</string>
-    <string name="play_with_app_name">Смотреть с CloudStream</string>
+    <string name="play_with_app_name">Смотреть с CineFlow</string>
     <string name="title_home">Главная</string>
     <string name="title_search">Поиск</string>
     <string name="title_downloads">Скачанное</string>
@@ -101,8 +101,6 @@
     <string name="subs_subtitle_elevation">Подъем субтитров</string>
     <string name="search_provider_text_providers">Поиск с использованием поставщиков</string>
     <string name="search_provider_text_types">Поиск с использованием типов</string>
-    <string name="benene_count_text">%d бенен(а/ов) выдано разработчикам</string>
-    <string name="benene_count_text_none">Бенены не выданы</string>
     <string name="subs_auto_select_language">Автоматический выбор языка</string>
     <string name="subs_download_languages">Скачать языки</string>
     <string name="subs_subtitle_languages">Язык субтитров</string>
@@ -239,14 +237,12 @@
     <string name="add_site_summary">Добавить клон существующего сайта с другим URL-адресом</string>
     <string name="dns_pref_summary">Используется для обхода блокировок интернет-провайдера</string>
     <string name="download_path_pref">Путь скачивания</string>
-    <string name="benene_des">Давал бенен</string>
     <string name="update">Обновить</string>
     <string name="primary_color_settings">Основной цвет</string>
     <string name="provider_lang_settings">Языки дополнений</string>
     <string name="repository_name_hint">Название репозитория (необязательно)</string>
     <string name="clear_history">Очистить историю</string>
     <string name="referer">Реферер (необязательно)</string>
-    <string name="benene">Дайте бенен разработчикам</string>
     <string name="pref_category_links">Ссылки</string>
     <string name="pref_category_player_layout">Расстановка</string>
     <string name="app_layout">Расстановка приложения</string>
@@ -408,7 +404,7 @@
     <string name="trailer">Трейлер</string>
     <string name="single_plugin_disabled" formatted="true">%s (отключено)</string>
     <string name="next">Далее</string>
-    <string name="blank_repo_message">В CloudStream по умолчанию не установлены сайты. Вам необходимо установить сайты из репозиториев. \n \nПрисоединяйтесь к нашему Discord-серверу или найдите в интернете.</string>
+    <string name="blank_repo_message">В CineFlow по умолчанию не установлены сайты. Вам необходимо установить сайты из репозиториев. \n \nПрисоединяйтесь к нашему Discord-серверу или найдите в интернете.</string>
     <string name="error_invalid_data">Недопустимые данные</string>
     <string name="resolution_and_title">Разрешение и название</string>
     <string name="previous">Предыдущий</string>
@@ -435,7 +431,7 @@
     <string name="batch_download_nothing_to_download_format" formatted="true">Все %s уже скачаны</string>
     <string name="batch_download_start_format" formatted="true">Скачивание началась %1$d %2$s…</string>
     <string name="plugins_not_downloaded" formatted="true">Не скачано: %d</string>
-    <string name="download_all_plugins_from_repo">Внимание: CloudStream не несёт ответственность за сторонние файлы и не поддерживает их!</string>
+    <string name="download_all_plugins_from_repo">Внимание: CineFlow не несёт ответственность за сторонние файлы и не поддерживает их!</string>
     <string name="safe_mode_title">Включен безопасный режим</string>
     <string name="plugins_downloaded" formatted="true">Скачано: %d</string>
     <string name="plugins_updated" formatted="true">Обновлено %d дополнений</string>
@@ -566,10 +562,10 @@
     <string name="clipboard_permission_error">Ошибка доступа к буферу обмена, пожалуйста, попробуйте ещё раз.</string>
     <string name="clipboard_unknown_error">Ошибка при копировании, пожалуйста, скопируйте журнал и свяжитесь с технической поддержкой.</string>
     <string name="unfavorite">Нелюбимое</string>
-    <string name="biometric_authentication_title">Разблокировать CloudStream</string>
+    <string name="biometric_authentication_title">Разблокировать CineFlow</string>
     <string name="favorite">Любимое</string>
     <string name="app_unrestricted_toast">Использование батареи приложением уже настроено на неограниченное</string>
-    <string name="app_info_intent_error">Не удаётся открыть информацию о приложении CloudStream.</string>
+    <string name="app_info_intent_error">Не удаётся открыть информацию о приложении CineFlow.</string>
     <string name="biometric_setting">Заблокировать биометрией</string>
     <string name="music_singular">Музыка</string>
     <string name="audio_book_singular">Аудиокнига</string>
@@ -580,8 +576,8 @@
     <string name="password_pin_authentication_title">Аутентификация по паролю/ПИН-коду</string>
     <string name="biometric_unsupported">Биометрическая аутентификация на этом устройстве не поддерживается</string>
     <string name="biometric_prompt_description">После нескольких неудачных попыток это уведомление закроется. Перезапустите приложение и попробуйте снова.</string>
-    <string name="biometric_warning">Ваши данные в CloudStream были скопированы. Хотя вероятность этого очень мала, все устройства могут вести себя по-разному. В редких случаях, когда доступ к приложению заблокирован, полностью удалите данные приложения и восстановите их из резервной копии. Мы приносим свои извинения за любые неудобства, связанные с этим.</string>
-    <string name="battery_dialog_message">Чтобы обеспечить бесперебойное скачивание и получение уведомлений о телепередачах, на которые вы подписаны, CloudStream необходимо разрешение на запуск в фоновом режиме. Нажав OK, вы увидите запрос. Там нажмите «Разрешить».\n\nПожалуйста, обратите внимание, что это разрешение не означает, что CS3 разрядит вашу батарею. Он будет работать в фоновом режиме только при необходимости, например, при получении уведомлений или загрузке видео из официальных дополнений.</string>
+    <string name="biometric_warning">Ваши данные в CineFlow были скопированы. Хотя вероятность этого очень мала, все устройства могут вести себя по-разному. В редких случаях, когда доступ к приложению заблокирован, полностью удалите данные приложения и восстановите их из резервной копии. Мы приносим свои извинения за любые неудобства, связанные с этим.</string>
+    <string name="battery_dialog_message">Чтобы обеспечить бесперебойное скачивание и получение уведомлений о телепередачах, на которые вы подписаны, CineFlow необходимо разрешение на запуск в фоновом режиме. Нажав OK, вы увидите запрос. Там нажмите «Разрешить».\n\nПожалуйста, обратите внимание, что это разрешение не означает, что CS3 разрядит вашу батарею. Он будет работать в фоновом режиме только при необходимости, например, при получении уведомлений или загрузке видео из официальных дополнений.</string>
     <string name="reset_btn">Сброс</string>
     <string name="next_season_episode_format" formatted="true">Сезон %1$d серия %2$d выйдет</string>
     <string name="episode_upcoming_format" formatted="true">Выйдет %s</string>
@@ -608,7 +604,7 @@
     <string name="delete_message_multiple" formatted="true">Вы уверены, что хотите навсегда удалить данный объект? \n \n%s</string>
     <string name="device_pin_error_message">Невозможно получить ПИН-код устройства, попробуйте локальную аутентификацию</string>
     <string name="device_pin_url_message">Откройте <b>%s</b> на вашем смартфоне или компьютере и введите данный код</string>
-    <string name="cs3wiki">CloudStream Вики</string>
+    <string name="cs3wiki">CineFlow Вики</string>
     <string name="device_pin_expired_message">ПИН-код больше не действителен !</string>
     <string name="device_pin_counter_text">Код истекает через %1$dмин %2$dсек</string>
     <string name="sort_release_date_new">Дата выпуска (от нового к старому)</string>
@@ -702,7 +698,6 @@
     <string name="top_center">Верхний центр</string>
     <string name="top_right">Верхний справа</string>
     <string name="play_full_series_button">Смотреть полностью</string>
-    <string name="install_prerelease">Установить предварительный выпуск</string>
     <string name="prerelease_already_installed">Предварительный выпуск уже установлен.</string>
     <string name="prerelease_install_failed">Не удалось установить предварительный выпуск.</string>
     <string name="show_episode_text">Текст эпизода</string>

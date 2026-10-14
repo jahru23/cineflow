@@ -102,7 +102,6 @@
     <string name="picture_in_picture">מצב תמונה בתמונה</string>
     <string name="player_size_settings">כפתור שינוי גודל הנגן</string>
     <string name="player_size_settings_des">הסר את הגבולות השחורים</string>
-    <string name="benene_count_text">%d בנינים שניתנו למפתחים</string>
     <string name="player_subtitles_settings_des">הגדרות כתוביות הנגן</string>
     <string name="chromecast_subtitles_settings_des">הגדרות כתוביות כרומקאסט</string>
     <string name="subs_font">גופן</string>
@@ -183,7 +182,6 @@
     <string name="show_fillers_settings">הצג פרק פילר (לא הכרחי לעלילה) לאנימה</string>
     <string name="automatic_plugin_download">הורדה אוטומטית של תוספים</string>
     <string name="automatic_plugin_updates">עדכוני תוספים אוטומטיים</string>
-    <string name="benene_des">כמות בנינים שניתנו</string>
     <string name="season">עונה</string>
     <string name="torrent">טורנטים</string>
     <string name="nsfw">NSFW</string>
@@ -274,7 +272,6 @@
     <string name="backup_failed_error_format">שגיאה בגיבוי %s</string>
     <string name="search">חיפוש</string>
     <string name="category_account">חשבונות ובטיחות</string>
-    <string name="benene_count_text_none">לא ניתנו בנינים</string>
     <string name="eigengraumode_settings">מהירות ניגון</string>
     <string name="show_trailers_settings">הצג טריילרים</string>
     <string name="kitsu_settings">הצג פוסטרים מKitsu</string>
@@ -293,7 +290,6 @@
     <string name="site">אתר</string>
     <string name="synopsis">תקציר</string>
     <string name="queued">בתור</string>
-    <string name="benene">לתת בניני למפתחים</string>
     <string name="season_format">%1$s %2$d%3$s</string>
     <string name="app_storage">אפליקציה</string>
     <string name="movies">סרטים</string>
@@ -698,7 +694,6 @@
     <string name="top_center">למעלה במרכז</string>
     <string name="top_right">למעלה מימין</string>
     <string name="play_full_series_button">נגן את כל הסדרה</string>
-    <string name="install_prerelease">התקן גרסת טרום־הפצה</string>
     <string name="prerelease_already_installed">גרסת טרום־ההפצה כבר מותקנת.</string>
     <string name="prerelease_install_failed">התקנת גרסת טרום־ההפצה נכשלה.</string>
     <string name="show_episode_text">טקסט הפרק</string>

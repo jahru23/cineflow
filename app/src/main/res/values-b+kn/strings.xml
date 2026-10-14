@@ -9,7 +9,6 @@
     <string name="subs_font">ಫಾಂಟ್</string>
     <string name="search_provider_text_providers">ಪೂರೈಕೆದಾರರನ್ನು ಬಳಸಿಕೊಂಡು ಹುಡುಕಿ</string>
     <string name="search_provider_text_types">ಪ್ರಕಾರಗಳನ್ನು ಬಳಸಿಕೊಂಡು ಹುಡುಕಿ</string>
-    <string name="benene_count_text_none">ಯಾವುದೇ ಬೆನೆನ್ಸ್ ನೀಡಿಲ್ಲ</string>
     <string name="subs_auto_select_language">ಸ್ವಯಂ-ಆಯ್ಕೆ ಭಾಷೆ</string>
     <string name="action_open_watching">ಹೆಚ್ಚಿನ ಮಾಹಿತಿ</string>
     <string name="action_open_play">\@ಸ್ಟ್ರಿಂಗ್/ಹೋಮ್_ಪ್ಲೇ</string>
@@ -48,7 +47,6 @@
     <string name="popup_pause_download">ಡೌನ್‌ಲೋಡ್ ವಿರಾಮಗೊಳಿಸಿ</string>
     <string name="error_bookmarks_text">ಬುಕ್‌ಮಾರ್ಕ್‌</string>
     <string name="subs_background_color">ಬ್ಯಾಕ್ ಗ್ರೌಂಡ್ ಕಲರ್</string>
-    <string name="benene_count_text">%d ಡೇವ್‌ಗಳಿಗೆ ಬೆನೆನೆಸ್ ನೀಡಲಾಗಿದೆ</string>
     <string name="subs_hold_to_reset_to_default">ಡೀಫಾಲ್ಟ್‌ಗೆ ಮರುಹೊಂದಿಸಲು ಹಿಡಿದುಕೊಳ್ಳಿ</string>
     <string name="provider_info_meta">ಸೈಟ್‌ನಿಂದ ಮೆಟಾಡೇಟಾವನ್ನು ಒದಗಿಸಲಾಗಿಲ್ಲ, ಅದು ಸೈಟ್‌ನಲ್ಲಿ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲದಿದ್ದರೆ ವೀಡಿಯೊ ಲೋಡಿಂಗ್ ವಿಫಲಗೊಳ್ಳುತ್ತದೆ.</string>
     <string name="picture_in_picture_des">ಇತರ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಮೇಲೆ ಚಿಕಣಿ ಪ್ಲೇಯರ್‌ನಲ್ಲಿ ಪ್ಲೇಬ್ಯಾಕ್ ಅನ್ನು ಮುಂದುವರಿಸುತ್ತದೆ</string>

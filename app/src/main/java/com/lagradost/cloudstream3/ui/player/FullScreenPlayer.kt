@@ -469,7 +469,7 @@ open class FullScreenPlayer : AbstractPlayerFragment<FragmentPlayerBinding>(
                 toggleEpisodesOverlay(show = false)
                 return@attachBackPressedCallback
             } else if (isShowing && isLayout(TV or EMULATOR)) {
-                // netflix capture back and hide ~monke
+                // netflix captures back and hides the UI
                 onClickChange()
             } else {
                 activity?.popCurrentPage("FullScreenPlayer")
@@ -1323,7 +1323,7 @@ open class FullScreenPlayer : AbstractPlayerFragment<FragmentPlayerBinding>(
                 }
             }
 
-            // netflix capture back and hide ~monke
+            // netflix captures back and hides the UI
             // This is removed due to inconsistent behavior on A36 vs A22, see https://github.com/recloudstream/cloudstream/issues/1804
             /*KeyEvent.KEYCODE_BACK -> {
                 if (isShowing && isLayout(TV or EMULATOR)) {

@@ -23,7 +23,6 @@
     <string name="type_plan_to_watch">Planuojama žiūrėti</string>
     <string name="update_started">Atnaujinimas pradėtas</string>
     <string name="sort_copy">Kopijuoti</string>
-    <string name="benene_des">Duoti bananai</string>
     <string name="home_more_info">Daugiau informacijos</string>
     <string name="title_downloads">Atsisiuntimai</string>
     <string name="subs_auto_select_language">Automatiškai pasirinkti kalbą</string>
@@ -39,7 +38,6 @@
     <string name="episode_more_options_des">Daugiau parinkčių</string>
     <string name="play_episode">Paleisti seriją</string>
     <string name="player_speed">Grotuvo greitis</string>
-    <string name="benene_count_text">%d Bananai duoti kūrėjams</string>
     <string name="type_watching">Žiūrima</string>
     <string name="pause">Pauzė</string>
     <string name="result_tags">Žanrai</string>
@@ -48,7 +46,6 @@
     <string name="vpn_might_be_needed">Gali reikėti VPN šiam tiekėjui, kad veiktų teisingai</string>
     <string name="search_hint_site" formatted="true">Ieškoti %s…</string>
     <string name="github">Github</string>
-    <string name="benene_count_text_none">Nėra duotu bananų</string>
     <string name="subs_subtitle_languages">Subtitrų kalba</string>
     <string name="home_change_provider_img_des">Keisti teikėją</string>
     <string name="subs_background_color">Fono spalva</string>
@@ -107,7 +104,6 @@
     <string name="subs_font">Šriftas</string>
     <string name="redo_setup_process">Perdaryti nustatymo procesą</string>
     <string name="episodes_range">%1$d-%2$d</string>
-    <string name="benene">Duoti bananą kūrėjams</string>
     <string name="go_back">Sugrįšti</string>
     <string name="copy_link_toast">Nuoroda nukopijuota į iškarpinę</string>
     <string name="search">Paieška</string>
@@ -127,7 +123,7 @@
     <string name="action_remove_watching">Pašalinti</string>
     <string name="action_open_watching">Daugiau informacijos</string>
     <string name="type_on_hold">Sustabdyta</string>
-    <string name="app_name">CloudStream</string>
+    <string name="app_name">CineFlow</string>
     <string name="home_play">Paleisti</string>
     <string name="livestreams">Gyvos transliacijos</string>
     <string name="apk_installer_settings">APK įrašymas</string>
@@ -137,7 +133,7 @@
     <string name="app_language">Programos kalba</string>
     <string name="sort_close">Uždaryti</string>
     <string name="action_add_to_bookmarks">Nustatyti žiūrėjimo statusą</string>
-    <string name="play_with_app_name">Paleisti su CloudStream</string>
+    <string name="play_with_app_name">Paleisti su CineFlow</string>
     <string name="subs_subtitle_elevation">Subtitrų lygis</string>
     <string name="episodes">Serijos</string>
     <string name="cast_format" formatted="true">Skleisti: %s</string>
@@ -179,7 +175,7 @@
     <string name="example_ip">127.0.0.1</string>
     <string name="batch_download_finish_format" formatted="true">Atsiųsta %1$d %2$s</string>
     <string name="skip_type_format" formatted="true">Praleisti %s</string>
-    <string name="blank_repo_message">Pagal numatytuosius nustatymus „CloudStream“ neturi įdiegtų svetainių. Turite įdiegti svetaines iš saugyklų. \n \nDėl beprotiško DMCA reikalavimų, kurios atliko Sky UK Limited 🤮, negalime susieti saugyklos svetainės programoje. \n \nPrisijunkite prie mūsų Discord arba ieškokite internete.</string>
+    <string name="blank_repo_message">Pagal numatytuosius nustatymus „CineFlow“ neturi įdiegtų svetainių. Turite įdiegti svetaines iš saugyklų. \n \nDėl beprotiško DMCA reikalavimų, kurios atliko Sky UK Limited 🤮, negalime susieti saugyklos svetainės programoje. \n \nPrisijunkite prie mūsų Discord arba ieškokite internete.</string>
     <string name="mobile_data">Mobilūs duomenys</string>
     <string name="example_username">šaunusPrisijungimoVardas</string>
     <string name="extension_authors">Autoriai</string>

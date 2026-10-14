@@ -24,8 +24,8 @@
     <string name="new_update_format" formatted="true">Знойдзена новае абнаўленне!\n%1$s -&gt; %2$s</string>
     <string name="filler" formatted="true">Запаўняльнік</string>
     <string name="duration_format" formatted="true">%d хвіл</string>
-    <string name="app_name">CloudStream</string>
-    <string name="play_with_app_name">Прайграць праз CloudStream</string>
+    <string name="app_name">CineFlow</string>
+    <string name="play_with_app_name">Прайграць праз CineFlow</string>
     <string name="title_home">Дамашняя</string>
     <string name="title_search">Пошук</string>
     <string name="title_downloads">Спампоўкі</string>
@@ -115,8 +115,6 @@
     <string name="subs_font_size">Памер шрыфту</string>
     <string name="search_provider_text_providers">Пошук праз пастаўшчыкоў</string>
     <string name="search_provider_text_types">Пошук праз тыпы</string>
-    <string name="benene_count_text">%d бенена(ў) дадзена распрацоўшчыкам</string>
-    <string name="benene_count_text_none">Бененаў не дадзена</string>
     <string name="subs_auto_select_language">Выбраць мову аўтаматычна</string>
     <string name="subs_download_languages">Спампаваць мовы</string>
     <string name="subs_subtitle_languages">Мова субцітраў</string>
@@ -191,15 +189,12 @@
     <string name="updates_settings">Паказваць абнаўленні праграмы</string>
     <string name="updates_settings_des">Аўтаматычна правяраць на новыя абнаўленні пасля адкрыцця праграмы.</string>
     <string name="redo_setup_process">Паўтарыць наладжванне</string>
-    <string name="install_prerelease">Усталяваць перадфінальную версію</string>
     <string name="prerelease_already_installed">Перадфінальная версія ўжо ўсталявана.</string>
     <string name="prerelease_install_failed">Не ўдалося ўсталяваць перадфінальную версію.</string>
     <string name="apk_installer_settings">Усталёўшчык APK</string>
     <string name="lightnovel">Лёгкая праграма для раманаў ад тых жа распрацоўшчыкаў</string>
     <string name="anim">Праграма для анімэ ад тых жа распрацоўшчыкаў</string>
     <string name="discord">Далучайцеся да Discord</string>
-    <string name="benene">Даць распрацоўшчыкам бенен</string>
-    <string name="benene_des">Дадзена бененаў</string>
     <string name="app_language">Мова праграмы</string>
     <string name="no_chromecast_support_toast">У гэтага пастаўшчыка няма падтрымкі Chromecast</string>
     <string name="no_links_found_toast">Спасылак не знойдзена</string>
@@ -500,11 +495,11 @@
     <string name="plugins_disabled" formatted="true">Выключана: %d</string>
     <string name="plugins_not_downloaded" formatted="true">Не спампавана: %d</string>
     <string name="plugins_updated" formatted="true">Абноўлена %d убудоў</string>
-    <string name="blank_repo_message">Прадвызначана на CloudStream няма ўсталяваных вэб-сайтаў. Вам трэба ўсталяваць вэб-сайты з рэпазіторыяў. \n \nДалучыцеся да нашага сервера Discord або пашукайце ў сетцы.</string>
+    <string name="blank_repo_message">Прадвызначана на CineFlow няма ўсталяваных вэб-сайтаў. Вам трэба ўсталяваць вэб-сайты з рэпазіторыяў. \n \nДалучыцеся да нашага сервера Discord або пашукайце ў сетцы.</string>
     <string name="view_public_repositories_button">Праглядзець рэпазіторыі ад супольнасці</string>
     <string name="view_public_repositories_button_short">Публічны спіс</string>
     <string name="uppercase_all_subtitles">Усе субцітры верхнім рэгістрам</string>
-    <string name="download_all_plugins_from_repo">Увага: CloudStream не нясе адказнасці за выкарыстанне старонніх пашырэнняў і не пастаўляе для іх ніякай падтрымцы!</string>
+    <string name="download_all_plugins_from_repo">Увага: CineFlow не нясе адказнасці за выкарыстанне старонніх пашырэнняў і не пастаўляе для іх ніякай падтрымцы!</string>
     <string name="single_plugin_disabled" formatted="true">%s (выключана)</string>
     <string name="tracks">Трэкі</string>
     <string name="audio_tracks">Аўдыятрэкі</string>
@@ -554,9 +549,9 @@
     <string name="dismiss">Адхіліць</string>
     <string name="open_downloaded_repo">Адкрыць рэпазіторый</string>
     <string name="battery_dialog_title">Выключыць аптымізацыю батарэі</string>
-    <string name="battery_dialog_message">Каб забяспечыць бесперапынныя спампоўкі і апавяшчэнні аб тэлеперадачах, на якія вы падпісаны, CloudStream патрэбны дазвол на выкананне ў фонавым рэжыме. Па націсканні «ОК», вам пакажацца дыялогавае акно. Націсніце «Дазволіць».\n\nЗвярніце ўвагу — гэта не значыць, што CS3 будзе садзіць вашу батарэю. Праграма будзе працаваць у фоне толькі калі патрэбна, напрыклад пры атрыманні апавяшчэнняў або спампоўванні відэа з афіцыйных пашырэнняў.</string>
+    <string name="battery_dialog_message">Каб забяспечыць бесперапынныя спампоўкі і апавяшчэнні аб тэлеперадачах, на якія вы падпісаны, CineFlow патрэбны дазвол на выкананне ў фонавым рэжыме. Па націсканні «ОК», вам пакажацца дыялогавае акно. Націсніце «Дазволіць».\n\nЗвярніце ўвагу — гэта не значыць, што CS3 будзе садзіць вашу батарэю. Праграма будзе працаваць у фоне толькі калі патрэбна, напрыклад пры атрыманні апавяшчэнняў або спампоўванні відэа з афіцыйных пашырэнняў.</string>
     <string name="app_unrestricted_toast">Выкарыстанне батарэі ўжо выстаўлена як неабмежаванае</string>
-    <string name="app_info_intent_error">Не ўдалося адкрыць звесткі пра праграму CloudStream.</string>
+    <string name="app_info_intent_error">Не ўдалося адкрыць звесткі пра праграму CineFlow.</string>
     <string name="update_notification_downloading">Спампоўванне абнаўлення праграмы…</string>
     <string name="update_notification_installing">Усталяванне абнаўлення праграмы…</string>
     <string name="update_notification_failed">Не ўдалося ўсталяваць новую версію праграмы</string>
@@ -637,15 +632,15 @@
     <string name="auto_rotate_video">Аўтапаварот</string>
     <string name="favorite">Дадаць у абраныя</string>
     <string name="unfavorite">Выдаліць з абранага</string>
-    <string name="biometric_authentication_title">Разблакіруйце CloudStream</string>
+    <string name="biometric_authentication_title">Разблакіруйце CineFlow</string>
     <string name="biometric_setting">Блакіроўка біяметрыяй</string>
     <string name="password_pin_authentication_title">Праверка сапраўднасці паролем/PIN-кодам</string>
     <string name="biometric_unsupported">Праверка сапраўднасці біяметрыяй не падтрымліваецца на гэтай прыладзе</string>
     <string name="biometric_setting_summary">Разблакіруйце праграму адбіткам пальца, Face ID, PIN-кодам, узорам разблакіроўкі або паролем.</string>
     <string name="biometric_prompt_description">Праз некалькі няўдалых спроб акно з запытам закрыецца. Проста перазапусціце праграму, каб паўтарыць спробу.</string>
-    <string name="biometric_warning">Вашы дадзеныя CloudStream былібылі толькі што зарэзерваваныя. Нягледзячы на тое, што магчымасць вельмі маленькая, усе прылады могуць паводзіць сябе па-рознаму. У рэдкасным выпадку, калі вы страціце доступ да праграмы, поўнасцю ачысціце даныя і аднавіце іх праз рэзервовую копію. Выбачайце за любую нязручнасць, якая можа з гэтага атрымацца.</string>
+    <string name="biometric_warning">Вашы дадзеныя CineFlow былібылі толькі што зарэзерваваныя. Нягледзячы на тое, што магчымасць вельмі маленькая, усе прылады могуць паводзіць сябе па-рознаму. У рэдкасным выпадку, калі вы страціце доступ да праграмы, поўнасцю ачысціце даныя і аднавіце іх праз рэзервовую копію. Выбачайце за любую нязручнасць, якая можа з гэтага атрымацца.</string>
     <string name="reset_btn">Скінуць</string>
-    <string name="cs3wiki">CloudStream-Вікі</string>
+    <string name="cs3wiki">CineFlow-Вікі</string>
     <string name="device_pin_url_message">Наведайце <b>%s</b> на вашым смартфоне або камп\'ютары і ўвядзіце код вышэй</string>
     <string name="device_pin_error_message">Не ўдалося атрымаць PIN-код прылады, паспрабуйце лакальную праверку сапраўднасці</string>
     <string name="device_pin_expired_message">PIN-код састарэў!</string>

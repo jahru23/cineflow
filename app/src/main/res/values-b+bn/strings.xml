@@ -79,8 +79,6 @@
     <string name="subs_subtitle_elevation">সাবটাইটেল এর উচ্চতা</string>
     <string name="search_provider_text_providers">প্রভাইডার অনুযায়ি খুঁজুন</string>
     <string name="search_provider_text_types">ধরণ অনুযায়ি খুঁজুন</string>
-    <string name="benene_count_text">%d টা বেনেনা ডেভদের দেয়া হয়েছে</string>
-    <string name="benene_count_text_none">কোন বেনেনা দেয়া হয়নি</string>
     <string name="subs_download_languages">ভাষা ডাউনলোড</string>
     <string name="subs_subtitle_languages">সাবটাইটেল ভাষা</string>
     <string name="subs_hold_to_reset_to_default">প্রাথমিক সেটিংসে নিতে চেপে রাখুন</string>
@@ -153,7 +151,6 @@
     <string name="show_fillers_settings">অ্যানিমে ফিলার পর্ব প্রদর্শন</string>
     <string name="tv_series">টিভি সিরিজ</string>
     <string name="no_links_found_toast">লিংক পাওয়া যায়নি</string>
-    <string name="benene_des">চা খাওয়ানো হয়েছে</string>
     <string name="go_forward_30">+৩০</string>
     <string name="movies">সিনেমা</string>
     <string name="discord">ডিসকর্ডে যোগ দিন</string>
@@ -197,7 +194,6 @@
     <string name="tv_series_singular">সিরিজ</string>
     <string name="rating">রেটিং</string>
     <string name="redo_setup_process">সেটআপ প্রক্রিয়া পুনরায় করুন</string>
-    <string name="benene">ভাই এক কাপ চা খাওয়াও ☕</string>
     <string name="restore_settings">ব্যাকআপ থেকে ডেটা পুনরুদ্ধার করুন</string>
     <string name="copy_link_toast">ক্লিপবোর্ডে লিঙ্ক কপি করা হয়েছে</string>
     <string name="status_completed">দেখা শেষ</string>
@@ -370,7 +366,6 @@
     <string name="clear_suggestions">সাজেশন মুছে ফেলুন</string>
     <string name="show_player_metadata_overlay">প্লেয়ার মেটাডেটা ওভারলে প্রদর্শন</string>
     <string name="show_cast_in_details">কাস্ট প্যানেল প্রদর্শন</string>
-    <string name="install_prerelease">প্রাক-মুক্তি সংস্করণ ইনস্টলেশন</string>
     <string name="prerelease_already_installed">প্রাক-মুক্তি সংস্করণ ইতোমধ্যে ইনস্টল রয়েছে।</string>
     <string name="prerelease_install_failed">প্রাক-মুক্তি সংস্করণ ইনস্টল করতে সমস্যা হয়েছে।</string>
     <string name="delete_format" formatted="true">(%1$d | %2$s) মুছুন</string>

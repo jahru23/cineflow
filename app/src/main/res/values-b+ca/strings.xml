@@ -24,8 +24,8 @@
     <string name="new_update_format" formatted="true">S\'ha trobat una nova actualització!\n%1$s-&gt;%2$s</string>
     <string name="filler" formatted="true">Episodi especial</string>
     <string name="duration_format" formatted="true">%d min</string>
-    <string name="app_name">CloudStream</string>
-    <string name="play_with_app_name">Reprodueix amb CloudStream</string>
+    <string name="app_name">CineFlow</string>
+    <string name="play_with_app_name">Reprodueix amb CineFlow</string>
     <string name="title_home">Inici</string>
     <string name="title_search">Cercar</string>
     <string name="title_downloads">Descàrregues</string>
@@ -113,8 +113,6 @@
     <string name="subs_font_size">Tamany de la lletra</string>
     <string name="search_provider_text_providers">Cerca amb proveïdors</string>
     <string name="search_provider_text_types">Cerca per tipus</string>
-    <string name="benene_count_text">%d bananes donades als desenvolupadors</string>
-    <string name="benene_count_text_none">No s\'han donat bananes</string>
     <string name="subs_auto_select_language">Selecciona l\'idioma automàticament</string>
     <string name="subs_download_languages">Descarrega els idiomes</string>
     <string name="subs_subtitle_languages">Idioma dels subtítols</string>

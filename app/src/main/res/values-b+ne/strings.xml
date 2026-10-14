@@ -104,8 +104,6 @@
     <string name="subs_font_size">अक्षरको नाप</string>
     <string name="subs_font">फन्ट</string>
     <string name="search_provider_text_types">प्रकारको उपयोग गरी खोज्नुहोस्</string>
-    <string name="benene_count_text">%d केरा डेभलपर लाई दिइयो</string>
-    <string name="benene_count_text_none">एउटै पनी केरा दिइएन</string>
     <string name="continue_watching">हेर्न सुचारु राख्नुहोस</string>
     <string name="action_remove_watching">हटाउनुहोस्</string>
     <string name="player_size_settings_des">कालो सीमा हटाउनुहोस</string>

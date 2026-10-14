@@ -1378,13 +1378,15 @@ class MainActivity : AppCompatActivity(), ColorPickerDialogListener, BiometricCa
                         ___DO_NOT_CALL_FROM_A_PLUGIN_loadAllOnlinePlugins(this@MainActivity)
                     }
 
-                    // Automatically download plugins: on first launch (no plugins yet), auto download all;
-                    // otherwise follow user setting.
+                    // First launch: preinstall only the default providers (LK21 and friends) so the
+                    // home screen has a movie catalogue right away, without downloading every
+                    // provider in the repository. Additional providers are opt-in from Setup.
                     val currentDownloaded = PluginManager.getPluginsOnline()
                     if (currentDownloaded.isEmpty()) {
                         PluginManager.___DO_NOT_CALL_FROM_A_PLUGIN_downloadNotExistingPluginsAndLoad(
                             this@MainActivity,
-                            AutoDownloadMode.All
+                            AutoDownloadMode.All,
+                            PluginManager.DEFAULT_PLUGINS
                         )
                     } else {
                         val autoDownloadPlugin = AutoDownloadMode.getEnum(

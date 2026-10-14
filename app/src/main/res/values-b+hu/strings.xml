@@ -13,7 +13,7 @@
     <string name="new_update_format" formatted="true">Új frissítés található! \n%1$s -&gt; %2$s</string>
     <string name="duration_format" formatted="true">%d perc</string>
     <string name="app_dub_sub_episode_text_format" formatted="true">%1$sEp%2$d</string>
-    <string name="app_name">CloudStream</string>
+    <string name="app_name">CineFlow</string>
     <string name="preview_background_img_des">Háttér Előnézet</string>
     <string name="download_failed">Letöltés sikertelen</string>
     <string name="download">Letöltés</string>
@@ -42,7 +42,7 @@
     <string name="normal_no_plot">Nem található cselekmény</string>
     <string name="continue_watching">Lejátszás folytatása</string>
     <string name="filler" formatted="true">Filler</string>
-    <string name="play_with_app_name">Lejátszás CloudStreamel</string>
+    <string name="play_with_app_name">Lejátszás CineFlowel</string>
     <string name="title_home">Kezdőlap</string>
     <string name="title_search">Keresés</string>
     <string name="title_downloads">Letöltések</string>
@@ -102,7 +102,6 @@
     <string name="subs_font">Betűtípus</string>
     <string name="search_provider_text_types">Keresés típusok szerint</string>
     <string name="search_provider_text_providers">Keresés szolgáltatók szerint</string>
-    <string name="benene_count_text">%d Banán adva a fejlesztőknek</string>
     <string name="subs_download_languages">Nyelvek letöltése</string>
     <string name="subs_hold_to_reset_to_default">Tartsa lenyomva az alapértelmezett érték visszaállításához</string>
     <string name="subs_import_text" formatted="true">Betűtípusok importálása %s</string>
@@ -194,7 +193,6 @@
     <string name="updates_settings_des">Automatikusan keressen új frissítéseket indításkor.</string>
     <string name="github">Github</string>
     <string name="discord">Csatlakozz a Discordhoz</string>
-    <string name="benene">Adj Banánt a fejlesztőknek</string>
     <string name="no_chromecast_support_toast">Ez a szolgáltató nem támogatja a Chromecast-ot</string>
     <string name="no_links_found_toast">Nem található link</string>
     <string name="copy_link_toast">A link vágólapra másolva</string>
@@ -224,7 +222,6 @@
     <string name="swipe_to_change_settings">Csúsztassa ujját a beállítások módosításához</string>
     <string name="swipe_to_change_settings_des">Csúsztassa felf/le az ujját a bal/jobb oldalon a fényerő vagy a hangerő megváltoztatásához</string>
     <string name="backup_settings">Biztonsági mentés</string>
-    <string name="benene_count_text_none">0 Banán a fejlesztőknek</string>
     <string name="swipe_to_seek_settings">Húzd el, hogy beless</string>
     <string name="autoplay_next_settings">Következő epizód automatikus lejátszása</string>
     <string name="autoplay_next_settings_des">Következő epizód lejátszása amikor az aktuális epizód véget ér</string>
@@ -247,7 +244,6 @@
     <string name="backup_failed">Tárolási engedélyek hiányoznak. Kérjük próbálja újra.</string>
     <string name="apk_installer_settings">APK Telepítő</string>
     <string name="apk_installer_settings_des">Egyes telefonok nem támogatják az új csomag telepítőt. Ha a frissítések nem települnek, próbálja meg a régi opciót.</string>
-    <string name="benene_des">Banán adva</string>
     <string name="poster_ui_settings">A felhasználói felület elemeinek bekapcsolása a poszteren</string>
     <string name="no_update_found">Nem található frissítés</string>
     <string name="check_for_update">Frissítés keresése</string>
@@ -412,7 +408,7 @@
     <string name="subtitles_remove_captions">Zárt feliratok eltávolítása a feliratokból</string>
     <string name="is_adult">18+</string>
     <string name="delete_repository_plugins">Ez az összes tároló bővítményt is törli</string>
-    <string name="blank_repo_message">A CloudStream alapértelmezés szerint nem telepített webhelyeket. A webhelyeket a tárolókból kell telepítenie. \n \nCsatlakozz a Discord-unkhoz vagy keress online.</string>
+    <string name="blank_repo_message">A CineFlow alapértelmezés szerint nem telepített webhelyeket. A webhelyeket a tárolókból kell telepítenie. \n \nCsatlakozz a Discord-unkhoz vagy keress online.</string>
     <string name="extension_version">Verzió</string>
     <string name="action_mark_as_watched">Megjelölés megtekintettként</string>
     <string name="action_remove_from_watched">Eltávolítás a megnézettek közül</string>
@@ -587,7 +583,6 @@
     <string name="search_suggestions_des">Mutasson keresési javaslatok gépelés közben</string>
     <string name="clear_suggestions">Javaslatok törlése</string>
     <string name="show_cast_in_details">Szereplők panel megjelenítése</string>
-    <string name="install_prerelease">Telepít kiadás előtti verziót</string>
     <string name="prerelease_already_installed">Az előzetes verzió már telepítve van.</string>
     <string name="prerelease_install_failed">Az előzetes verzió telepítése sikertelen.</string>
     <string name="delete_files">Fájlok törlése</string>
@@ -626,7 +621,7 @@
     <string name="biometric_setting_summary">Az alkalmazás feloldása ujjlenyomat, arcfelismerés, PIN-kód, minta vagy jelszó segítségével.</string>
     <string name="biometric_prompt_description">Néhány sikertelen kísérlet után a parancssor bezárul. Egyszerűen indítsa újra az alkalmazást, és próbálja meg újra.</string>
     <string name="reset_btn">Visszaállítás</string>
-    <string name="cs3wiki">CloudStream Wiki</string>
+    <string name="cs3wiki">CineFlow Wiki</string>
     <string name="device_pin_url_message">Látogasson el <b>%s</b> okostelefonján vagy számítógépén, és írja be a fenti kódot</string>
     <string name="device_pin_error_message">Nem működik az eszköz PIN-kódja, próbálkozzon helyi hitelesítéssel</string>
     <string name="device_pin_expired_message">A PIN-kód most lejárt!</string>

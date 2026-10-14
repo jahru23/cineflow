@@ -20,8 +20,8 @@
     <string name="rated_format" formatted="true">Klassifikazzjoni: %.1f</string>
     <string name="new_update_format" formatted="true">Aġġornament ġdid misjub! \n%1$s -&gt; %2$s</string>
     <string name="duration_format" formatted="true">%d min</string>
-    <string name="app_name">CloudStream</string>
-    <string name="play_with_app_name">Ara bil-CloudStream</string>
+    <string name="app_name">CineFlow</string>
+    <string name="play_with_app_name">Ara bil-CineFlow</string>
     <string name="title_home">Dar</string>
     <string name="title_search">Fittex</string>
     <string name="title_downloads">Imnizzel</string>
@@ -82,8 +82,6 @@
     <string name="subs_font">Font</string>
     <string name="subs_font_size">Daqs tal-font</string>
     <string name="search_provider_text_providers">Fittex bl-użu ta\' fornituri</string>
-    <string name="benene_count_text">%d Benenes mogħtija lil devs</string>
-    <string name="benene_count_text_none">Ebda Benenes mogħtija</string>
     <string name="subs_auto_select_language">Agħżel il-Lingwa Awtomatikament</string>
     <string name="subs_download_languages">Niżżel Lingwi</string>
     <string name="subs_subtitle_languages">Lingwa tas-sottotitolu</string>

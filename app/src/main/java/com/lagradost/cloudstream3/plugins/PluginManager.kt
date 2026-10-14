@@ -117,6 +117,22 @@ object PluginManager {
 
     const val TAG = "PluginManager"
 
+    /**
+     * Providers that come preinstalled on the very first launch.
+     *
+     * Instead of downloading the whole repository we only fetch this small set, so the app has a
+     * working movie catalogue (LK21 and friends) the moment the user opens it, without pulling
+     * every single provider - including the NSFW ones - behind their back.
+     */
+    val DEFAULT_PLUGINS = setOf(
+        "LK21",
+        "Idlix",
+        "Rebahin",
+        "Pahe",
+        "MovieBox",
+        "BlurayUFR"
+    )
+
     private var hasCreatedNotChanel = false
 
     /**
@@ -351,7 +367,8 @@ object PluginManager {
     @Throws
     suspend fun ___DO_NOT_CALL_FROM_A_PLUGIN_downloadNotExistingPluginsAndLoad(
         activity: Activity,
-        mode: AutoDownloadMode
+        mode: AutoDownloadMode,
+        onlyInternalNames: Set<String>? = null
     ) {
         assertNonRecursiveCallstack()
 
@@ -381,6 +398,11 @@ object PluginManager {
             //Omit already existing plugins
             if (getPluginPath(activity, sitePlugin.internalName, onlineData.repositoryData.url).exists()) {
                 Log.i(TAG, "Skip > ${sitePlugin.internalName}")
+                return@mapNotNull null
+            }
+
+            //Omit anything outside the requested whitelist, used to preinstall only DEFAULT_PLUGINS
+            if (onlyInternalNames != null && !onlyInternalNames.contains(sitePlugin.internalName)) {
                 return@mapNotNull null
             }
 

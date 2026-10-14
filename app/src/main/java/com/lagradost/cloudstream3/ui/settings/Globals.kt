@@ -8,8 +8,6 @@ import com.lagradost.cloudstream3.R
 import com.lagradost.cloudstream4.compose.DeviceLayout.Companion.isAutoTv
 
 object Globals {
-    var beneneCount = 0
-
     const val PHONE: Int = 0b00001
     const val TV: Int = 0b00010
     const val EMULATOR: Int = 0b00100

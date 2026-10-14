@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- CineFlow fallback avatar: the monochrome Fluid C mark -->
+    <path
+        android:fillColor="?attr/white"
+        android:pathData="M 60,14 A 40,40 0 1,0 60,94 C 55.2,98.8 47.4,98.8 42.6,94 C 37.8,89.2 37.8,81.4 42.6,76.6 A 20.9,20.9 0 1,1 42.6,54.8 C 37.8,50 37.8,42.2 42.6,37.4 C 47.4,32.6 55.2,32.6 60,37.4 Z" />
+    <path
+        android:fillColor="?attr/white"
+        android:pathData="M 42,44 C 42,41.6 44.6,40.1 46.8,41.4 L 69,55 C 70.7,56.1 70.7,58.5 69,59.6 L 46.8,73.2 C 44.6,74.5 42,73 42,70.6 Z" />
+</vector>

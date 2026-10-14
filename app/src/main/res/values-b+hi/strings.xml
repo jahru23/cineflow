@@ -50,8 +50,6 @@
     <string name="player_speed">प्लेयर स्पीड</string>
     <string name="search_provider_text_providers">प्रोवाइडरों का उपयोग कर खोजें</string>
     <string name="search_provider_text_types">प्रकार का उपयोग करके खोजें</string>
-    <string name="benene_count_text">%d केले डेवलपर्स को दिए गए</string>
-    <string name="benene_count_text_none">कोई केले नहीं दिए गए</string>
     <string name="subs_hold_to_reset_to_default">डिफ़ॉल्ट पर रीसेट करने के लिए दबाए रखें</string>
     <string name="continue_watching">देखना जारी रखें</string>
     <string name="action_remove_watching">हटाएँ</string>
@@ -74,8 +72,6 @@
     <string name="lightnovel">उन्हीं डेवलपर्स द्वारा Light novel ऐप</string>
     <string name="anim">उन्हीं डेवलपर्स द्वारा Anime ऐप</string>
     <string name="discord">Discord से जुड़िये</string>
-    <string name="benene">इस प्रोग्राम के निर्माता को केला दें</string>
-    <string name="benene_des">केले दे दिए गए</string>
     <string name="app_language">ऍप की भाषा</string>
     <string name="no_chromecast_support_toast">यह प्रोवाइडर क्रोमकास्ट का समर्थन नहीं करता</string>
     <string name="no_links_found_toast">कोई लिंक नहीं मिले</string>
@@ -328,7 +324,6 @@
     <string name="episode_action_play_mirror">Play mirror</string>"
     <string name="show_hd">कितना hd है वो वाला लेबल</string>
     <string name="play_full_series_button">पूरी सीरीज़ शरु करे</string>
-    <string name="install_prerelease">प्री-रिलीज़ संस्करण स्थापित करें</string>
     <string name="prerelease_already_installed">प्री-रिलीज़ पहले से ही स्थापित है।</string>
     <string name="prerelease_install_failed">प्री-रिलीज़ इंस्टॉल करने में विफल रहा।</string>
     <string name="show_dub">डब लेबल</string>

@@ -22,8 +22,8 @@
     <string name="new_update_format" formatted="true">Pronađeno je novo ažuriranje! \n%1$s -&gt; %2$s</string>
     <string name="filler" formatted="true">Umetak</string>
     <string name="duration_format" formatted="true">%d min</string>
-    <string name="app_name">CloudStream</string>
-    <string name="play_with_app_name">Pokreni s CloudStreamom</string>
+    <string name="app_name">CineFlow</string>
+    <string name="play_with_app_name">Pokreni s CineFlowom</string>
     <string name="title_home">Početna stranica</string>
     <string name="title_search">Traži</string>
     <string name="title_downloads">Preuzimanja</string>
@@ -95,8 +95,6 @@
     <string name="subs_font_size">Veličina fonta</string>
     <string name="search_provider_text_providers">Traži koristeći pružatelje usluga</string>
     <string name="search_provider_text_types">Traži koristeći vrste</string>
-    <string name="benene_count_text">%d banana dano programerima</string>
-    <string name="benene_count_text_none">Nisi dao ni jednu bananu</string>
     <string name="subs_auto_select_language">Automatski odabir jezika</string>
     <string name="subs_download_languages">Preuzmi jezike</string>
     <string name="subs_subtitle_languages">Jezik titlova</string>
@@ -161,8 +159,6 @@
     <string name="lightnovel">Aplikacija za romane od istih programera</string>
     <string name="anim">Anime aplikacija od istih programera</string>
     <string name="discord">Pridruži se Discordu</string>
-    <string name="benene">Daj bananu programerima</string>
-    <string name="benene_des">Dane banane</string>
     <string name="app_language">Jezik aplikacije</string>
     <string name="no_chromecast_support_toast">Ovaj pružatelj usluga nema podršku za Chromecast</string>
     <string name="no_links_found_toast">Nisu pronađene poveznice</string>
@@ -408,11 +404,11 @@
     <string name="plugins_downloaded" formatted="true">Preuzeto: %d</string>
     <string name="plugins_disabled" formatted="true">Onemogućeno: %d</string>
     <string name="plugins_not_downloaded" formatted="true">Nepreuzeto: %d</string>
-    <string name="blank_repo_message">CloudStream standardno nema instalirane web stranice. Stranice morate instalirati iz repozitorija. \n \nPridružite se našem Discordu ili tražite online.</string>
+    <string name="blank_repo_message">CineFlow standardno nema instalirane web stranice. Stranice morate instalirati iz repozitorija. \n \nPridružite se našem Discordu ili tražite online.</string>
     <string name="view_public_repositories_button">Prikaži repozitorije zajednice</string>
     <string name="view_public_repositories_button_short">Javni popis</string>
     <string name="uppercase_all_subtitles">Koristi velika slova za sve titlove</string>
-    <string name="download_all_plugins_from_repo">Upozorenje: CloudStream ne preuzima odgovornost za korištenje proširenja trećih strana i ne pruža podršku za njih!</string>
+    <string name="download_all_plugins_from_repo">Upozorenje: CineFlow ne preuzima odgovornost za korištenje proširenja trećih strana i ne pruža podršku za njih!</string>
     <string name="single_plugin_disabled" formatted="true">%s (onemogućeno)</string>
     <string name="tracks">Zapisi</string>
     <string name="audio_tracks">Audio zapis</string>
@@ -579,7 +575,7 @@
     <string name="biometric_setting">Zaključaj s biometrijskim podatcima</string>
     <string name="resume_remaining" formatted="true">%s \npreostalo</string>
     <string name="clipboard_permission_error">Pogreška pri pristupanju međuspremnika. Pokušaj ponovo.</string>
-    <string name="biometric_authentication_title">Otključaj CloudStream</string>
+    <string name="biometric_authentication_title">Otključaj CineFlow</string>
     <string name="password_pin_authentication_title">Lozinka/PIN autentifikacija</string>
     <string name="biometric_unsupported">Ovaj uređaj ne podržava biometrijsku autentifikaciju</string>
     <string name="biometric_prompt_description">Ovaj je ekran zatvoren zbog višestrukih neuspjelih pokušaja. Pokrenite aplikaciju ponovo.</string>
@@ -588,7 +584,7 @@
     <string name="audio_book_singular">Audio knjiga</string>
     <string name="custom_media_singular">Medij</string>
     <string name="app_unrestricted_toast">Korištenje baterije aplikacije već je postavljeno na neograničeno</string>
-    <string name="app_info_intent_error">Neuspjelo otvaranje podataka CloudStream aplikacije.</string>
+    <string name="app_info_intent_error">Neuspjelo otvaranje podataka CineFlow aplikacije.</string>
     <string name="favorite">Favorit</string>
     <string name="unfavorite">Ukloni iz favorita</string>
     <string name="music_singular">Glazba</string>
@@ -596,12 +592,12 @@
     <string name="biometric_setting_summary">Otključaj aplikaciju pomoću otiska prsta, ID-a lica, PIN-a, uzorka i lozinke.</string>
     <string name="episode_upcoming_format" formatted="true">Sljedeća u %s</string>
     <string name="clipboard_unknown_error">Pogreška pri kopiranju. Kopirajte zapisnik i kontaktirajte podršku aplikacije.</string>
-    <string name="battery_dialog_message">Da biste osigurali neprekinuta preuzimanja i obavijesti za pretplaćene TV emisije, CloudStream treba dopuštenje za rad u pozadini. Pritiskom na \"U redu\" prikazat će vam se dijaloški okvir s zahtjevom. Molimo vas da pritisnete \"Dopusti\". \n\nNapominjemo da ovo dopuštenje ne znači da će CS3 trošiti vašu bateriju. Aplikacija će raditi u pozadini samo kada je to potrebno, primjerice prilikom primanja obavijesti ili preuzimanja videozapisa iz službenih proširenja.</string>
-    <string name="biometric_warning">Vaši CloudStream podaci su sada spremljeni u sigurnosnu kopiju. Iako je vjerojatnost mala, neki se uređaji mogu ponašati drugačije. Ako izgubite pristup aplikaciji, potpuno izbrišite podatke aplikacije i obnovite ih pomoću sigurnosne kopije. Ispričavamo se zbog mogućih neugodnosti.</string>
+    <string name="battery_dialog_message">Da biste osigurali neprekinuta preuzimanja i obavijesti za pretplaćene TV emisije, CineFlow treba dopuštenje za rad u pozadini. Pritiskom na \"U redu\" prikazat će vam se dijaloški okvir s zahtjevom. Molimo vas da pritisnete \"Dopusti\". \n\nNapominjemo da ovo dopuštenje ne znači da će CS3 trošiti vašu bateriju. Aplikacija će raditi u pozadini samo kada je to potrebno, primjerice prilikom primanja obavijesti ili preuzimanja videozapisa iz službenih proširenja.</string>
+    <string name="biometric_warning">Vaši CineFlow podaci su sada spremljeni u sigurnosnu kopiju. Iako je vjerojatnost mala, neki se uređaji mogu ponašati drugačije. Ako izgubite pristup aplikaciji, potpuno izbrišite podatke aplikacije i obnovite ih pomoću sigurnosne kopije. Ispričavamo se zbog mogućih neugodnosti.</string>
     <string name="next_season_episode_format" formatted="true">Sezona %1$d epizoda %2$d izlazi za</string>
     <string name="episode_action_cast_mirror">Cast duplikat</string>
     <string name="player_settings_select_cast_device">Odaberi uređaj za emitiranje</string>
-    <string name="cs3wiki">CloudStream Wiki</string>
+    <string name="cs3wiki">CineFlow Wiki</string>
     <string name="pref_category_accounts">Računi</string>
     <string name="pref_category_security">Sigurnost</string>
     <string name="auth_locally">Lokalna autentifikacija</string>
@@ -703,7 +699,6 @@
     <string name="action_reload">Ponovo učitano</string>
     <string name="reload_provider">Usluga ponovnog učitavanja</string>
     <string name="play_full_series_button">Reproduciraj cijelu seriju</string>
-    <string name="install_prerelease">Instaliraj predizdanje</string>
     <string name="prerelease_already_installed">Predizdanje je već instalirano.</string>
     <string name="prerelease_install_failed">Instalacija predizdanja nije uspjela.</string>
     <string name="episode_action_play_mirror">Pokreni duplikat</string>"

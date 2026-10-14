@@ -88,8 +88,8 @@
     <string name="preview_background_img_des">پیش‌نمایش پس‌زمینه</string>
     <string name="filler" formatted="true">فیلتر</string>
     <string name="duration_format" formatted="true">%d دقیقه</string>
-    <string name="app_name">CloudStream</string>
-    <string name="play_with_app_name">پخش با CloudStream</string>
+    <string name="app_name">CineFlow</string>
+    <string name="play_with_app_name">پخش با CineFlow</string>
     <string name="title_home">خانه</string>
     <string name="title_search">جست‌وجو</string>
     <string name="title_settings">تنظیمات</string>
@@ -208,9 +208,7 @@
     <string name="backup_settings">پشتیبانی‌گیری داده</string>
     <string name="restore_failed_format" formatted="true">مشکل در بازگردانی داده از پرونده %s</string>
     <string name="site">وبگاه</string>
-    <string name="benene_des">انعام دادن</string>
     <string name="discord">عضویت در دیسکورد</string>
-    <string name="benene">هدیه انعام به توسعه‌دهندگان</string>
     <string name="status_completed">تمام‌شده</string>
     <string name="no_subtitles">بدون زیرنویس</string>
     <string name="test_passed">متوقف‌شده</string>
@@ -226,8 +224,6 @@
     <string name="offline_file">در دسترس برای تماشای آفلاین</string>
     <string name="select_all">انتخاب همه</string>
     <string name="deselect_all">انتخاب نکردن همه</string>
-    <string name="benene_count_text">%d Benenes به توسعه دهندگان داده می‌شود</string>
-    <string name="benene_count_text_none">بدون Benenes</string>
     <string name="chromecast_subtitles_settings">زیرنویس Chromecast</string>
     <string name="torrent_info">این ویدیو یک تورنت است، این بدان معنی است که فعالیت ویدیویی شما قابل ردیابی است. \nقبل از ادامه، مطمئن شوید که تورنت را درک کرده اید.</string>
     <string name="picture_in_picture_des">پخش را در یک پخش کننده مینیاتوری در بالای برنامه های دیگر ادامه می دهد</string>
