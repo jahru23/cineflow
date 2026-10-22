@@ -65,16 +65,16 @@ object BatteryOptimizationChecker {
 
     fun Context.showRequestIgnoreBatteryOptDialog() {
         try {
-            val intent = Intent().apply {
-                action =  Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-                data = "package:$PACKAGE_NAME".toUri()
-            }
+            val intent = Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
             startActivity(intent)
-        } catch (t: Throwable) {
-            Log.e(TAG, "Unable to invoke APP_DETAILS intent", t)
-            if (t is ActivityNotFoundException) {
-                showToast("Exception: Activity Not Found")
-            } else {
+        } catch (_: Throwable) {
+            try {
+                val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
+                    data = "package:$PACKAGE_NAME".toUri()
+                }
+                startActivity(intent)
+            } catch (t: Throwable) {
+                Log.e(TAG, "Unable to invoke battery settings intent", t)
                 showToast(R.string.app_info_intent_error)
             }
         }
